@@ -1,0 +1,54 @@
+<view class="toy-page">
+  <view class="toy-heading">
+    <text class="toy-title">玩具</text>
+  </view>
+
+  <view class="category-grid">
+    <button class="category-card" data-category="carrot" bindtap="openCategory" aria-label="胡萝卜，进入纸样生成">
+      <view class="category-art carrot-art" aria-hidden="true">
+        <view class="carrot-leaf carrot-leaf-one"></view>
+        <view class="carrot-leaf carrot-leaf-two"></view>
+        <view class="carrot-body"></view>
+      </view>
+      <view class="category-footer">
+        <text class="category-name">胡萝卜</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
+    <button class="category-card" data-category="apple" bindtap="openCategory" aria-label="苹果，进入纸样生成">
+      <view class="category-art apple-art" aria-hidden="true">
+        <view class="apple-stem"></view>
+        <view class="apple-leaf"></view>
+        <view class="apple-fruit"></view>
+      </view>
+      <view class="category-footer">
+        <text class="category-name">苹果</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
+    <button class="category-card" data-category="frog" bindtap="openCategory" aria-label="小青蛙，进入纸样生成">
+      <view class="category-art frog-art" aria-hidden="true">
+        <view class="frog-eye frog-eye-left"></view>
+        <view class="frog-eye frog-eye-right"></view>
+        <view class="frog-face"></view>
+      </view>
+      <view class="category-footer">
+        <text class="category-name">小青蛙</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
+    <button class="category-card" data-category="persimmon" bindtap="openCategory" aria-label="柿子，进入纸样生成">
+      <view class="category-art persimmon-art" aria-hidden="true">
+        <view class="persimmon-calyx"></view>
+        <view class="persimmon-fruit"></view>
+      </view>
+      <view class="category-footer">
+        <text class="category-name">柿子</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "desc": "口水巾纸样生成器页面",
+  "rules": [{
+    "action": "allow",
+    "page": "pages/index/index"
+  }]
+}

@@ -1,0 +1,88 @@
+<view class="guide-page">
+  <view class="guide-section">
+    <view class="section-heading">
+      <text class="section-index">01</text>
+      <text class="section-title">先选好上手的布</text>
+    </view>
+    <view class="guide-row">
+      <view class="guide-state state-easy">推荐</view>
+      <view class="guide-copy">
+        <text class="guide-name">中薄棉布</text>
+        <text class="guide-detail">不易滑动、好裁剪，适合练习直线和简单弧线。</text>
+      </view>
+    </view>
+    <view class="guide-row">
+      <view class="guide-state state-easy">可选</view>
+      <view class="guide-copy">
+        <text class="guide-name">中薄帆布</text>
+        <text class="guide-detail">布面稳定、耐磨；先避开厚帆布和多层硬料，机器更容易跳针或断针。</text>
+      </view>
+    </view>
+    <view class="guide-row">
+      <view class="guide-state state-hard">进阶</view>
+      <view class="guide-copy">
+        <text class="guide-name">真丝、弹力针织</text>
+        <text class="guide-detail">真丝较滑且易抽丝；弹力针织容易拉长变形，需要合适针型、针距和送料方式。</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="guide-section">
+    <view class="section-heading">
+      <text class="section-index">02</text>
+      <text class="section-title">起步工具清单</text>
+    </view>
+    <view class="guide-row">
+      <view class="guide-state state-easy">先准备</view>
+      <view class="guide-copy">
+        <text class="guide-name">剪、量、画、固定</text>
+        <text class="guide-detail">布剪、软尺或直尺、可水洗划粉/记号笔、珠针或布夹。布剪尽量只剪布。</text>
+      </view>
+    </view>
+    <view class="guide-row">
+      <view class="guide-state state-easy">按需准备</view>
+      <view class="guide-copy">
+        <text class="guide-name">针、线、熨斗</text>
+        <text class="guide-detail">手缝需要手缝针；机缝需要基础缝纫机和匹配布料的机针、缝纫线。家用熨斗可先代替专业熨烫设备。</text>
+      </view>
+    </view>
+    <view class="guide-row">
+      <view class="guide-state state-later">暂缓购买</view>
+      <view class="guide-copy">
+        <text class="guide-name">进阶设备与专用工具</text>
+        <text class="guide-detail">锁边机、裁布滚刀和切割垫、压脚套装等，等做过几件作品、确认常用场景后再添置。</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="guide-section guide-section-last">
+    <view class="section-heading">
+      <text class="section-index">03</text>
+      <text class="section-title">常见翻车先查这里</text>
+    </view>
+    <view class="guide-row">
+      <view class="guide-state state-fix">跳线</view>
+      <view class="guide-copy">
+        <text class="guide-detail">先换新机针并确认针型适合布料，再重新穿线；针弯、针装反或针线不匹配都可能导致跳针。</text>
+      </view>
+    </view>
+    <view class="guide-row">
+      <view class="guide-state state-fix">断线</view>
+      <view class="guide-copy">
+        <text class="guide-detail">重新按说明穿线，检查线轴是否卡住、线张力是否过紧，以及机针孔或针板有无毛刺。</text>
+      </view>
+    </view>
+    <view class="guide-row">
+      <view class="guide-state state-fix">布料抽丝</view>
+      <view class="guide-copy">
+        <text class="guide-detail">减少反复拆缝和拉扯；裁剪后及时锁边或用合适的包边方式收住毛边。</text>
+      </view>
+    </view>
+    <view class="guide-row">
+      <view class="guide-state state-fix">尺寸算错</view>
+      <view class="guide-copy">
+        <text class="guide-detail">核对纸样是否含缝份、裁片数量和布纹方向；打印纸样先量校准框，确认按100%比例输出。</text>
+      </view>
+    </view>
+  </view>
+</view>

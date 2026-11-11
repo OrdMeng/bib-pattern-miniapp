@@ -1,0 +1,11 @@
+# WeChat Developer Tools local settings
+project.private.config.json
+
+# Local/editor and generated files
+.DS_Store
+node_modules/
+dist/
+build/
+.env
+.env.*
+!.env.example

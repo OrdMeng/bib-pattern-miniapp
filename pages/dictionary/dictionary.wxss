@@ -1,0 +1,81 @@
+.dictionary-page {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 28rpx 32rpx 56rpx;
+  background: #f6f0e2;
+  color: #493c31;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  min-height: 82rpx;
+  padding: 0 20rpx;
+  border: 1rpx solid #ded2c1;
+  border-radius: 12rpx;
+  background: #fffefa;
+}
+
+.search-icon { margin-right: 12rpx; color: #827567; font-size: 38rpx; line-height: 1; }
+.search-input { flex: 1; min-width: 0; height: 78rpx; color: #493c31; font-size: 27rpx; }
+.clear-button { display: flex; align-items: center; justify-content: center; width: 52rpx; height: 52rpx; margin: 0; padding: 0; border: 0; border-radius: 50%; background: #f1e2d2; color: #725846; font-size: 36rpx; line-height: 1; }
+.clear-button::after { border: 0; }
+
+.term-list { margin-top: 20rpx; }
+.term-row { padding: 24rpx 4rpx; border-bottom: 1rpx solid #e5d9c5; }
+.term-main { display: flex; align-items: flex-start; gap: 20rpx; }
+.term-symbol { display: flex; flex: 0 0 64rpx; align-items: center; justify-content: center; width: 64rpx; height: 64rpx; border-radius: 10rpx; background: #e6eee7; color: #246346; font-size: 34rpx; }
+.term-content { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 8rpx; }
+.term-name { font-size: 29rpx; font-weight: 600; }
+.term-definition { color: #6d6257; font-size: 25rpx; line-height: 1.65; }
+.term-chevron { flex: 0 0 36rpx; color: #9e603d; text-align: center; font-size: 32rpx; }
+.term-visual { margin: 20rpx 0 0 84rpx; }
+.diagram-area { position: relative; height: 132rpx; overflow: hidden; border: 1rpx solid #e5d9c5; border-radius: 10rpx; background: #fffefa; }
+.visual-caption { display: block; margin-top: 10rpx; color: #827567; font-size: 22rpx; line-height: 1.5; }
+.fabric-piece { position: absolute; top: 26%; left: 20%; width: 60%; height: 48%; border: 1rpx solid #d9c9b6; background: #f6f0e2; }
+.seam-line { position: absolute; right: 0; bottom: 20%; left: 0; border-top: 3rpx dashed #9e603d; }
+.raw-edge { position: absolute; right: 0; bottom: 0; left: 0; border-top: 2rpx solid #246346; }
+.seam-measure { position: absolute; right: 16%; bottom: 21%; height: 27%; border-left: 2rpx solid #df7650; }
+.diagram-label { position: absolute; color: #6d6257; font-size: 19rpx; }
+.label-seam { right: 11%; bottom: 38%; }
+.label-edge { right: 11%; bottom: 8%; }
+.grain-fabric { position: absolute; top: 14%; left: 35%; width: 30%; height: 72%; border: 1rpx solid #d9c9b6; background: #f6f0e2; }
+.selvage-line { position: absolute; top: 0; right: 12%; bottom: 0; border-left: 2rpx dashed #9e603d; }
+.grain-arrow { position: absolute; z-index: 1; top: 25%; left: 49%; width: 2rpx; height: 50%; background: #246346; }
+.grain-arrow::before, .grain-arrow::after { position: absolute; left: -7rpx; width: 12rpx; height: 12rpx; border-top: 2rpx solid #246346; border-left: 2rpx solid #246346; content: ""; }
+.grain-arrow::before { top: 0; transform: rotate(45deg); }
+.grain-arrow::after { bottom: 0; transform: rotate(225deg); }
+.grain-arrow-grain-horizontal { transform: rotate(90deg); }
+.grain-arrow-grain-bias { transform: rotate(45deg); }
+.label-grain { right: 29%; bottom: 2%; }
+.tape-fabric { position: absolute; inset: 18% 16%; border: 1rpx solid #d9c9b6; border-radius: 50%; background: #f6f0e2; }
+.tape-strip { position: absolute; top: 40%; left: 8%; width: 84%; height: 20%; border: 2rpx solid #246346; border-radius: 30rpx; background: #e6eee7; transform: rotate(-12deg); }
+.tape-seam { position: absolute; top: 49%; left: 8%; width: 84%; border-top: 2rpx dashed #9e603d; transform: rotate(-12deg); }
+.shape-fabric { position: absolute; top: 36%; left: 26%; width: 48%; height: 40%; border: 1rpx solid #d9c9b6; border-radius: 48% 48% 12% 12%; background: #f6f0e2; }
+.shape-arrow { position: absolute; top: 50%; width: 22%; border-top: 3rpx solid #df7650; }
+.shape-arrow::after { position: absolute; top: -8rpx; right: 0; width: 12rpx; height: 12rpx; border-top: 3rpx solid #df7650; border-right: 3rpx solid #df7650; content: ""; transform: rotate(45deg); }
+.shape-arrow-left { left: -24%; transform: rotate(180deg); }
+.shape-arrow-right { right: -24%; }
+.shape-iron { position: absolute; top: 19%; left: 43%; width: 18%; height: 25%; border: 2rpx solid #246346; border-radius: 10rpx 10rpx 3rpx 3rpx; background: #e6eee7; }
+.iron-handle { position: absolute; top: -40%; left: 25%; width: 45%; height: 50%; border: 2rpx solid #246346; border-bottom: 0; border-radius: 12rpx 12rpx 0 0; }
+.notch-fabric { position: absolute; top: 43%; left: 17%; width: 66%; height: 28%; border: 1rpx solid #d9c9b6; background: #f6f0e2; }
+.notch-mark { position: absolute; top: -1rpx; left: 48%; width: 15rpx; height: 15rpx; border-right: 2rpx solid #df7650; border-bottom: 2rpx solid #df7650; background: #fffefa; transform: rotate(45deg) translateY(-55%); }
+.match-layer { position: absolute; left: 24%; width: 52%; height: 24%; border: 1rpx solid #d9c9b6; background: #f6f0e2; }
+.match-layer-top { top: 22%; }
+.match-layer-bottom { bottom: 22%; }
+.match-dot { position: absolute; top: 50%; left: 50%; width: 12rpx; height: 12rpx; border-radius: 50%; background: #df7650; transform: translate(-50%, -50%); }
+.match-guide { position: absolute; top: 24%; bottom: 24%; left: 50%; border-left: 2rpx dashed #246346; }
+.overcast-fabric { position: absolute; top: 32%; left: 22%; width: 56%; height: 38%; border: 1rpx solid #d9c9b6; background: #f6f0e2; }
+.overcast-stitches { position: absolute; top: 0; right: -3rpx; bottom: 0; width: 18%; background: repeating-linear-gradient(135deg, transparent 0 8rpx, #9e603d 8rpx 11rpx, transparent 11rpx 16rpx); }
+.overlock-layer { position: absolute; left: 22%; width: 56%; height: 28%; border: 1rpx solid #d9c9b6; background: #f6f0e2; }
+.overlock-layer-back { top: 23%; }
+.overlock-layer-front { bottom: 23%; }
+.overlock-stitches { position: absolute; top: 49%; left: 22%; width: 56%; border-top: 3rpx dashed #9e603d; }
+.empty-state { padding: 80rpx 20rpx; color: #827567; text-align: center; font-size: 26rpx; }
+
+@media (max-width: 360px) {
+  .dictionary-page { padding-right: 24rpx; padding-left: 24rpx; }
+  .term-main { gap: 14rpx; }
+  .term-symbol { flex-basis: 56rpx; width: 56rpx; height: 56rpx; }
+  .term-visual { margin-left: 70rpx; }
+}

@@ -1,0 +1,55 @@
+<view class="home-page">
+  <view class="home-heading">
+    <text class="home-title">分类</text>
+    <text class="home-subtitle">选择要制作的纸样</text>
+  </view>
+
+  <view class="category-grid">
+    <button class="category-card" data-category="bib" bindtap="openCategory" aria-label="口水巾，进入纸样生成">
+      <view class="category-art" aria-hidden="true">
+        <view class="bib-shape"><view class="bib-neck"></view></view>
+      </view>
+      <view class="category-footer">
+        <text class="category-name">口水巾</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
+    <button class="category-card" data-category="toy" bindtap="openCategory" aria-label="玩具分类">
+      <view class="category-art toy-art" aria-hidden="true">
+        <view class="toy-block toy-block-top"></view>
+        <view class="toy-block toy-block-left"></view>
+        <view class="toy-block toy-block-right"></view>
+      </view>
+      <view class="category-footer">
+        <text class="category-name">玩具</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
+    <button class="category-card" data-category="dictionary" bindtap="openCategory" aria-label="术语词典">
+      <view class="category-art dictionary-art" aria-hidden="true">
+        <view class="dictionary-book">
+          <view class="dictionary-spine"></view>
+          <view class="dictionary-line dictionary-line-one"></view>
+          <view class="dictionary-line dictionary-line-two"></view>
+          <view class="dictionary-line dictionary-line-three"></view>
+        </view>
+      </view>
+      <view class="category-footer">
+        <text class="category-name">术语词典</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
+    <button class="category-card" data-category="beginner-guide" bindtap="openCategory" aria-label="新手避坑">
+      <view class="category-art beginner-art" aria-hidden="true">
+        <view class="beginner-sign"><view class="beginner-mark">!</view></view>
+      </view>
+      <view class="category-footer">
+        <text class="category-name">新手避坑</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+  </view>
+</view>

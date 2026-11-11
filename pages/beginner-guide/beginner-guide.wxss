@@ -1,0 +1,26 @@
+.guide-page {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 20rpx 32rpx 64rpx;
+  background: #f6f0e2;
+  color: #493c31;
+}
+
+.guide-section { padding: 28rpx 0 20rpx; border-bottom: 1rpx solid #ded2c1; }
+.guide-section-last { border-bottom: 0; }
+.section-heading { display: flex; align-items: baseline; gap: 16rpx; margin: 0 0 14rpx; }
+.section-index { color: #9e603d; font-size: 23rpx; font-variant-numeric: tabular-nums; }
+.section-title { font-size: 30rpx; font-weight: 600; }
+.guide-row { display: flex; align-items: flex-start; gap: 18rpx; padding: 18rpx 0; border-top: 1rpx solid #e8dfd2; }
+.guide-state { flex: 0 0 112rpx; padding-top: 2rpx; color: #246346; font-size: 23rpx; font-weight: 600; }
+.state-hard, .state-fix { color: #a34a3d; }
+.state-later { color: #827567; }
+.guide-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 6rpx; }
+.guide-name { font-size: 26rpx; font-weight: 500; }
+.guide-detail { color: #6d6257; font-size: 24rpx; line-height: 1.6; }
+
+@media (max-width: 360px) {
+  .guide-page { padding-right: 24rpx; padding-left: 24rpx; }
+  .guide-row { gap: 10rpx; }
+  .guide-state { flex-basis: 96rpx; font-size: 21rpx; }
+}

@@ -1,0 +1,57 @@
+<view class="dictionary-page">
+  <view class="search-box">
+    <text class="search-icon" aria-hidden="true">⌕</text>
+    <input class="search-input" type="text" value="{{query}}" placeholder="搜索术语或别称" confirm-type="search" bindinput="searchTerms" aria-label="搜索术语词典" />
+    <button wx:if="{{query}}" class="clear-button" bindtap="clearSearch" aria-label="清除搜索">×</button>
+  </view>
+
+  <view class="term-list">
+    <view wx:for="{{terms}}" wx:key="term" class="term-row" data-term="{{item.term}}" bindtap="toggleTerm" aria-expanded="{{expandedTerm === item.term}}">
+      <view class="term-main">
+        <view class="term-symbol" aria-hidden="true">{{item.symbol}}</view>
+        <view class="term-content">
+          <text class="term-name">{{item.term}}</text>
+          <text class="term-definition">{{item.definition}}</text>
+        </view>
+        <text class="term-chevron" aria-hidden="true">{{expandedTerm === item.term ? '−' : '+'}}</text>
+      </view>
+      <view wx:if="{{expandedTerm === item.term}}" class="term-visual">
+        <view class="diagram-area diagram-{{item.visual}}">
+          <block wx:if="{{item.visual === 'seam'}}">
+            <view class="fabric-piece"><view class="seam-line"></view><view class="raw-edge"></view><view class="seam-measure"></view></view>
+            <text class="diagram-label label-seam">缝线</text><text class="diagram-label label-edge">布边</text>
+          </block>
+          <block wx:if="{{item.visual === 'grain-vertical' || item.visual === 'grain-horizontal' || item.visual === 'grain-bias'}}">
+            <view class="grain-fabric"><view class="grain-arrow grain-arrow-{{item.visual}}"></view><view class="selvage-line"></view></view>
+            <text class="diagram-label label-grain">布边</text>
+          </block>
+          <block wx:if="{{item.visual === 'tape'}}">
+            <view class="tape-fabric"><view class="tape-strip"></view><view class="tape-seam"></view></view>
+          </block>
+          <block wx:if="{{item.visual === 'shaping'}}">
+            <view class="shape-fabric"><view class="shape-arrow shape-arrow-left"></view><view class="shape-arrow shape-arrow-right"></view></view>
+            <view class="shape-iron"><view class="iron-handle"></view></view>
+          </block>
+          <block wx:if="{{item.visual === 'notch'}}">
+            <view class="notch-fabric"><view class="notch-mark"></view></view>
+          </block>
+          <block wx:if="{{item.visual === 'match'}}">
+            <view class="match-layer match-layer-top"><view class="match-dot"></view></view>
+            <view class="match-layer match-layer-bottom"><view class="match-dot"></view></view>
+            <view class="match-guide"></view>
+          </block>
+          <block wx:if="{{item.visual === 'overcast'}}">
+            <view class="overcast-fabric"><view class="overcast-stitches"></view></view>
+          </block>
+          <block wx:if="{{item.visual === 'overlock'}}">
+            <view class="overlock-layer overlock-layer-back"></view>
+            <view class="overlock-layer overlock-layer-front"></view>
+            <view class="overlock-stitches"></view>
+          </block>
+        </view>
+        <text class="visual-caption">{{item.visualCaption}}</text>
+      </view>
+    </view>
+    <view wx:if="{{terms.length === 0}}" class="empty-state">没有找到匹配的术语</view>
+  </view>
+</view>

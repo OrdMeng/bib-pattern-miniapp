@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/toy/toy",
+    "pages/dictionary/dictionary",
+    "pages/beginner-guide/beginner-guide",
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "口水巾纸样",
+    "navigationBarBackgroundColor": "#f6f0e2",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f6f0e2",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

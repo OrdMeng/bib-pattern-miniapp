@@ -1,0 +1,109 @@
+.home-page {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 48rpx 32rpx;
+  background: #f6f0e2;
+  color: #493c31;
+}
+
+.home-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+  margin: 12rpx 4rpx 32rpx;
+}
+
+.home-title { font-size: 38rpx; font-weight: 600; }
+.home-subtitle { color: #827567; font-size: 24rpx; }
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20rpx;
+}
+
+.category-card {
+  box-sizing: border-box;
+  min-width: 0;
+  margin: 0;
+  padding: 18rpx;
+  border: 2rpx solid #f0dfd0;
+  border-radius: 16rpx;
+  background: #fffefa;
+  color: #493c31;
+  text-align: left;
+}
+
+.category-card::after { border: 0; }
+
+.category-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  border-radius: 12rpx;
+  background: #f3e4d5;
+}
+
+.bib-shape {
+  position: relative;
+  width: 58%;
+  height: 58%;
+  border: 4rpx solid #b96f50;
+  border-radius: 28% 28% 44% 44%;
+  background: #fff8ed;
+  transform: perspective(200rpx) rotateX(-4deg);
+}
+
+.bib-neck {
+  position: absolute;
+  top: -4rpx;
+  left: 50%;
+  width: 38%;
+  height: 30%;
+  border: 4rpx solid #b96f50;
+  border-top: 0;
+  border-radius: 0 0 50% 50%;
+  background: #f3e4d5;
+  transform: translateX(-50%);
+}
+
+.toy-art { position: relative; }
+.toy-block {
+  position: absolute;
+  width: 24%;
+  height: 24%;
+  border: 4rpx solid #246346;
+  border-radius: 10rpx;
+  background: #e5a34a;
+}
+.toy-block-top { top: 28%; left: 38%; background: #e5a34a; }
+.toy-block-left { top: 48%; left: 25%; background: #f4eee1; }
+.toy-block-right { top: 48%; right: 25%; background: #df7650; }
+.dictionary-art { position: relative; }
+.dictionary-book { position: relative; width: 48%; height: 58%; border: 4rpx solid #246346; border-radius: 8rpx; background: #fff8ed; }
+.dictionary-spine { position: absolute; top: 0; bottom: 0; left: 18%; border-left: 3rpx solid #b96f50; }
+.dictionary-line { position: absolute; left: 32%; width: 48%; height: 3rpx; border-radius: 2rpx; background: #9e603d; }
+.dictionary-line-one { top: 30%; }
+.dictionary-line-two { top: 47%; }
+.dictionary-line-three { top: 64%; }
+.beginner-art { position: relative; }
+.beginner-sign { display: flex; align-items: center; justify-content: center; width: 44%; height: 48%; border: 4rpx solid #df7650; border-radius: 14rpx; background: #fff8ed; transform: rotate(-5deg); }
+.beginner-mark { color: #9e603d; font-size: 64rpx; font-weight: 700; line-height: 1; }
+
+.category-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rpx;
+  padding: 18rpx 2rpx 4rpx;
+}
+
+.category-name { font-size: 30rpx; font-weight: 600; }
+.category-arrow { color: #9e603d; font-size: 44rpx; line-height: 1; }
+
+@media (max-width: 360px) {
+  .home-page { padding-right: 24rpx; padding-left: 24rpx; }
+  .category-grid { gap: 14rpx; }
+  .category-card { padding: 14rpx; }
+}
