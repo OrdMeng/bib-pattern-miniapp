@@ -22,7 +22,8 @@ Page({
     feedback: "",
     feedbackType: "",
     patternValid: true,
-    canvasDescription: ""
+    canvasDescription: "",
+    isExporting: false
   },
 
   onReady() {
@@ -67,6 +68,20 @@ Page({
       this.pixelRatio = dpr || 1;
       item.node.width = item.width * this.pixelRatio;
       item.node.height = item.height * this.pixelRatio;
+      if (this.data.isFrog || this.data.isPersimmon) {
+        const image = item.node.createImage();
+        image.onload = () => {
+          if (this.data.isFrog) this.frogReferenceImage = image;
+          if (this.data.isPersimmon) this.persimmonReferenceImage = image;
+          this.renderPattern();
+        };
+        image.onerror = () => this.setFeedback(
+          this.data.isPersimmon ? "柿子纸样图片加载失败，请重新打开页面。" : "青蛙纸样图片加载失败，请重新打开页面。",
+          "error"
+        );
+        image.src = this.data.isPersimmon ? "/assets/persimmon-pattern.jpg" : "/assets/frog-pattern.jpg";
+        return;
+      }
       this.renderPattern();
     });
   },
@@ -80,7 +95,10 @@ Page({
       width: Number(this.data.width),
       count: Number(this.data.count),
       size: Number(this.data.size),
-      overlap: Number(this.data.overlap)
+      overlap: Number(this.data.overlap),
+      referenceImage: this.data.isPersimmon
+        ? this.persimmonReferenceImage || null
+        : this.frogReferenceImage || null
     };
   },
 
@@ -97,9 +115,9 @@ Page({
       readout: geometry.getReadout(state, details),
       patternValid: details.valid,
       canvasDescription: this.data.isPersimmon
-        ? "柿子纸样，包含果实4片、叶子8片和果蒂1片，灰色虚线为1厘米缝份。"
+        ? "柿子原图纸样，包含果实4片、叶子8片和果蒂1片，图片已预留1厘米缝份。"
         : this.data.isFrog
-        ? "小青蛙纸样，包含头、身体、眼皮、眼球、胳膊和背带裤裁片，灰色虚线为1厘米缝份，头片内虚线为拼合线。"
+        ? "小青蛙纸样，显示用户提供的原始纸样图片；该图片没有尺寸标尺，请打印前自行校准。"
         : this.data.isApple
         ? "苹果纸样，包含6片苹果主体和2片叶子，绿色实线为裁剪线，灰色虚线为1厘米缝份，包含5厘米比例尺。"
         : this.data.isCarrot
@@ -191,13 +209,18 @@ Page({
   },
 
   exportPattern(action) {
+    if (this.data.isExporting) return;
     const state = this.getState();
     const details = geometry.calculatePattern(state);
     if (!details.valid) {
       this.setFeedback(details.error || "当前纸样参数无效，请调整后再导出。", "error");
       return;
     }
-    wx.showLoading({ title: "正在生成图片", mask: true });
+    if (!this.canvasNode || !this.canvasContext) {
+      this.setFeedback("纸样还在生成，请稍后再试。", "error");
+      return;
+    }
+    this.setData({ isExporting: true, feedback: "正在生成图片，请稍候...", feedbackType: "info" });
     wx.canvasToTempFilePath({
       canvas: this.canvasNode,
       fileType: "png",
@@ -205,34 +228,39 @@ Page({
       destWidth: Math.round(this.canvasWidth * this.pixelRatio),
       destHeight: Math.round(this.canvasHeight * this.pixelRatio),
       success: (result) => {
-        wx.hideLoading();
         if (action === "print") {
+          this.setData({ isExporting: false });
           wx.showModal({
             title: "打印图片已生成",
             content: "请保存高清图片后，以100%实际大小打印，并用5cm校准框检查比例。",
             confirmText: "保存图片",
             success: (modalResult) => {
               if (modalResult.confirm) this.saveToAlbum(result.tempFilePath);
+              else this.clearExportFeedback();
             }
           });
         } else {
           this.saveToAlbum(result.tempFilePath);
         }
       },
-      fail: () => {
-        wx.hideLoading();
+      fail: (error) => {
+        this.setData({ isExporting: false });
         this.setFeedback("图片生成失败，请稍后重试。", "error");
       }
     }, this);
   },
 
   saveToAlbum(filePath) {
+    this.setData({ isExporting: true, feedback: "正在保存到相册，请稍候...", feedbackType: "info" });
     wx.saveImageToPhotosAlbum({
       filePath,
       success: () => {
+        this.setData({ isExporting: false });
         this.setFeedback("图片已保存到相册。", "info");
+        wx.showToast({ title: "已保存到相册", icon: "success", duration: 1800 });
       },
       fail: (error) => {
+        this.setData({ isExporting: false });
         if (error && /auth deny|authorize denied|permission denied/i.test(error.errMsg || "")) {
           wx.showModal({
             title: "需要相册权限",
@@ -247,5 +275,11 @@ Page({
         }
       }
     });
+  },
+
+  clearExportFeedback() {
+    if (this.data.feedback === "正在生成图片，请稍候..." || this.data.feedback === "正在保存到相册，请稍候...") {
+      this.setFeedback("", "");
+    }
   }
 });

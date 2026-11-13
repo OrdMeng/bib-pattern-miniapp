@@ -1,7 +1,52 @@
 {
   "description": "口水巾纸样生成器",
   "packOptions": {
-    "ignore": [],
+    "ignore": [
+      {
+        "type": "folder",
+        "value": "output"
+      },
+      {
+        "type": "file",
+        "value": "assets/apple-result.png"
+      },
+      {
+        "type": "file",
+        "value": "assets/carrot-result.png"
+      },
+      {
+        "type": "file",
+        "value": "assets/frog-result.png"
+      },
+      {
+        "type": "file",
+        "value": "assets/persimmon-result.png"
+      },
+      {
+        "type": "file",
+        "value": "assets/apple-result.webp"
+      },
+      {
+        "type": "file",
+        "value": "assets/carrot-result.webp"
+      },
+      {
+        "type": "file",
+        "value": "assets/frog-result.webp"
+      },
+      {
+        "type": "file",
+        "value": "assets/persimmon-result.webp"
+      },
+      {
+        "type": "file",
+        "value": "assets/frog-pattern.webp"
+      },
+      {
+        "type": "file",
+        "value": "assets/persimmon-pattern.webp"
+      }
+    ],
     "include": []
   },
   "setting": {
@@ -35,9 +80,10 @@
   },
   "compileType": "miniprogram",
   "libVersion": "3.7.3",
-  "appid": "wx4dcbcb54abe7bb43",
+  "appid": "wx5ab09462ae5b6903",
   "projectname": "bib-pattern-miniapp",
   "condition": {},
   "simulatorPluginLibVersion": {},
-  "editorSetting": {}
+  "editorSetting": {},
+  "isGameTourist": false
 }

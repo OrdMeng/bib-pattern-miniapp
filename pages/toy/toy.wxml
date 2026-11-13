@@ -5,10 +5,8 @@
 
   <view class="category-grid">
     <button class="category-card" data-category="carrot" bindtap="openCategory" aria-label="胡萝卜，进入纸样生成">
-      <view class="category-art carrot-art" aria-hidden="true">
-        <view class="carrot-leaf carrot-leaf-one"></view>
-        <view class="carrot-leaf carrot-leaf-two"></view>
-        <view class="carrot-body"></view>
+      <view class="category-art carrot-art">
+        <image class="category-photo" src="/assets/carrot-result.jpg" mode="aspectFill" aria-hidden="true" />
       </view>
       <view class="category-footer">
         <text class="category-name">胡萝卜</text>
@@ -18,9 +16,7 @@
 
     <button class="category-card" data-category="apple" bindtap="openCategory" aria-label="苹果，进入纸样生成">
       <view class="category-art apple-art" aria-hidden="true">
-        <view class="apple-stem"></view>
-        <view class="apple-leaf"></view>
-        <view class="apple-fruit"></view>
+        <image class="category-photo" src="/assets/apple-result.jpg" mode="aspectFill" />
       </view>
       <view class="category-footer">
         <text class="category-name">苹果</text>
@@ -29,10 +25,8 @@
     </button>
 
     <button class="category-card" data-category="frog" bindtap="openCategory" aria-label="小青蛙，进入纸样生成">
-      <view class="category-art frog-art" aria-hidden="true">
-        <view class="frog-eye frog-eye-left"></view>
-        <view class="frog-eye frog-eye-right"></view>
-        <view class="frog-face"></view>
+      <view class="category-art frog-art">
+        <image class="category-photo" src="/assets/frog-result.jpg" mode="aspectFill" aria-hidden="true" />
       </view>
       <view class="category-footer">
         <text class="category-name">小青蛙</text>
@@ -41,9 +35,8 @@
     </button>
 
     <button class="category-card" data-category="persimmon" bindtap="openCategory" aria-label="柿子，进入纸样生成">
-      <view class="category-art persimmon-art" aria-hidden="true">
-        <view class="persimmon-calyx"></view>
-        <view class="persimmon-fruit"></view>
+      <view class="category-art persimmon-art">
+        <image class="category-photo" src="/assets/persimmon-result.jpg" mode="aspectFill" aria-hidden="true" />
       </view>
       <view class="category-footer">
         <text class="category-name">柿子</text>

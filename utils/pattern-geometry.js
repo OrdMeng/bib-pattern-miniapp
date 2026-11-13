@@ -303,6 +303,17 @@ function lensPoints(centerX, centerY, width, length, bulge) {
   ];
 }
 
+function capsulePoints(centerX, centerY, width, length) {
+  const radius = width / 2;
+  const straight = Math.max(0, length - width);
+  const topCenterY = centerY - straight / 2;
+  const bottomCenterY = centerY + straight / 2;
+  return [
+    ...arcPoints(radius, 0, -Math.PI, 24).map((point) => [point[0] + centerX, point[1] + topCenterY]),
+    ...arcPoints(radius, Math.PI, 0, 24).map((point) => [point[0] + centerX, point[1] + bottomCenterY]).slice(1)
+  ];
+}
+
 function appleOutline(state) {
   const appleLength = 14.17;
   const appleWidth = 4.99;
@@ -358,8 +369,8 @@ function frogOutline(state) {
     16
   ).slice(1));
 
-  const bodyX = -6;
-  const bodyTop = -5;
+  const bodyX = -7;
+  const bodyTop = -3;
   const body = [
     [bodyX - 6, bodyTop], [bodyX + 6, bodyTop],
     ...cubicPoints([bodyX + 6, bodyTop], [bodyX + 10, bodyTop + 8], [bodyX + 10, bodyTop + 16], [bodyX + 8, bodyTop + 20], 16).slice(1),
@@ -370,28 +381,32 @@ function frogOutline(state) {
   ];
 
   const overallsX = 8;
-  const overallsY = 26;
-  const overallsWidth = 19;
-  const overallsHeight = 12;
+  const overallsY = 30;
+  const overallsWidth = 23;
+  const overallsHeight = 14;
+  const overallsLeft = overallsX - overallsWidth / 2;
+  const overallsRight = overallsX + overallsWidth / 2;
+  const overallsTop = overallsY - overallsHeight / 2;
+  const overallsBottom = overallsY + overallsHeight / 2;
   const overalls = [
-    [overallsX - 5, overallsY - overallsHeight / 2],
-    [overallsX + 5, overallsY - overallsHeight / 2],
-    [overallsX + 9, overallsY - 1],
-    [overallsX + overallsWidth / 2, overallsY + overallsHeight / 2],
-    [overallsX + 1.2, overallsY + overallsHeight / 2],
-    [overallsX + 0.5, overallsY - 1],
-    [overallsX - 0.5, overallsY - 1],
-    [overallsX - 1.2, overallsY + overallsHeight / 2],
-    [overallsX - overallsWidth / 2, overallsY + overallsHeight / 2],
-    [overallsX - 9, overallsY - 1]
+    [overallsX - 5, overallsTop],
+    [overallsX + 5, overallsTop],
+    ...cubicPoints([overallsX + 5, overallsTop], [overallsX + 8, overallsTop + 5], [overallsRight - 1, overallsY - 1], [overallsRight, overallsY + 1], 12).slice(1),
+    ...cubicPoints([overallsRight, overallsY + 1], [overallsRight + 2, overallsY + 5], [overallsRight + 2, overallsBottom - 1], [overallsRight, overallsBottom], 12).slice(1),
+    [overallsX + 1.2, overallsBottom],
+    [overallsX + 0.5, overallsY + 2],
+    [overallsX - 0.5, overallsY + 2],
+    [overallsX - 1.2, overallsBottom],
+    ...cubicPoints([overallsLeft, overallsBottom], [overallsLeft - 2, overallsBottom - 1], [overallsLeft - 2, overallsY + 5], [overallsLeft, overallsY + 1], 12).slice(1),
+    ...cubicPoints([overallsLeft, overallsY + 1], [overallsLeft + 1, overallsY - 1], [overallsX - 8, overallsTop + 5], [overallsX - 5, overallsTop], 12).slice(1)
   ];
 
   const pieces = [
     { points: head, guides: [headGuide], count: "2片", label: "头" },
     { points: body, count: "2片", label: "身体" },
-    { points: arcPoints(4.1, 0, TAU, 48).map((point) => [point[0] + 12, point[1] + headY]), count: "2片", label: "眼皮" },
-    { points: arcPoints(3.3, 0, TAU, 48).map((point) => [point[0] + 12, point[1] + headY + 10]), count: "2片", label: "眼球" },
-    { points: lensPoints(9, 7, 4.5, 13, 2 / 3), count: "4片", label: "胳膊" },
+    { points: arcPoints(4.1, 0, TAU, 48).map((point) => [point[0] + 9, point[1] + headY]), count: "2片", label: "眼皮" },
+    { points: arcPoints(3.3, 0, TAU, 48).map((point) => [point[0] + 13, point[1] + 5]), count: "2片", label: "眼球" },
+    { points: capsulePoints(6.5, 5, 4.5, 13), count: "4片", label: "胳膊" },
     { points: overalls, count: "2片", label: "背带裤" }
   ].map((piece) => ({
     ...piece,

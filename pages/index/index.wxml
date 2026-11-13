@@ -17,7 +17,7 @@
     <view class="paper-panel">
       <view class="paper-caption">
         <text class="kind-label">{{kindLabel}}</text>
-        <text class="proof">示意轮廓 · 待样片验证</text>
+        <text class="proof">{{isFrog || isPersimmon ? '原图纸样' : '示意轮廓 · 待样片验证'}}</text>
       </view>
       <canvas id="patternCanvas" type="2d" class="pattern-canvas" aria-label="{{canvasDescription}}"></canvas>
       <view class="canvas-description" aria-live="polite">{{canvasDescription}}</view>
@@ -63,16 +63,16 @@
         <input class="neck-input" type="digit" value="{{neck}}" maxlength="4" placeholder="20-50" bindblur="changeNeck" aria-label="脖围，20到50厘米，步进0.5厘米" />
       </block>
       <view class="seam-row">
-        <view><text class="seam-title">显示缝份</text><text class="seam-note">固定 1cm · 灰色虚线</text></view>
-        <switch checked="{{seam}}" color="#9e603d" bindchange="toggleSeam" aria-label="显示缝份"></switch>
+        <view><text class="seam-title">{{isFrog || isPersimmon ? '原图纸样' : '显示缝份'}}</text><text class="seam-note">{{isFrog || isPersimmon ? '图片自带线条 · 打印前请校准尺寸' : '固定 1cm · 灰色虚线'}}</text></view>
+        <switch wx:if="{{!isFrog && !isPersimmon}}" checked="{{seam}}" color="#9e603d" bindchange="toggleSeam" aria-label="显示缝份"></switch>
       </view>
     </view>
 
     <view wx:if="{{feedback}}" class="feedback {{feedbackType === 'error' ? 'error' : ''}}" role="alert">{{feedback}}</view>
 
     <view class="actions">
-      <button class="action-button print" bindtap="handlePrint" disabled="{{!patternValid}}">纸样打印</button>
-      <button class="action-button save" bindtap="handleSave" disabled="{{!patternValid}}">保存图片</button>
+      <button class="action-button print" bindtap="handlePrint" disabled="{{!patternValid || isExporting}}">{{isExporting ? '生成中...' : '纸样打印'}}</button>
+      <button class="action-button save" bindtap="handleSave" disabled="{{!patternValid || isExporting}}">{{isExporting ? '保存中...' : '保存图片'}}</button>
     </view>
   </view>
 </scroll-view>

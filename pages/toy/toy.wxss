@@ -12,22 +12,13 @@
 .category-card { box-sizing: border-box; min-width: 0; margin: 0; padding: 18rpx; border: 2rpx solid #f0dfd0; border-radius: 16rpx; background: #fffefa; color: #493c31; text-align: left; }
 .category-card::after { border: 0; }
 .category-art { position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 1; border-radius: 12rpx; background: #f3e4d5; }
-.carrot-body { position: absolute; top: 34%; left: 50%; width: 32%; height: 46%; border: 3rpx solid #bb6135; border-radius: 48% 48% 54% 54%; background: #e9853c; clip-path: polygon(0 0, 100% 0, 50% 100%); transform: translateX(-50%); }
-.carrot-leaf { position: absolute; top: 23%; left: 50%; width: 13%; height: 25%; border-radius: 100% 0 100% 0; background: #246346; }
-.carrot-leaf-one { transform: translateX(-80%) rotate(-28deg); }
-.carrot-leaf-two { transform: translateX(-15%) rotate(28deg) scaleX(-1); }
+.carrot-art { overflow: hidden; background: #f7f7f2; }
+.category-photo { display: block; width: 100%; height: 100%; }
 .apple-art { position: relative; }
-.apple-fruit { position: absolute; top: 30%; left: 50%; width: 48%; height: 48%; border: 3rpx solid #a23d36; border-radius: 46% 46% 50% 50%; background: #d85b4f; transform: translateX(-50%); }
-.apple-stem { position: absolute; z-index: 1; top: 19%; left: 50%; width: 5%; height: 17%; border-radius: 4rpx; background: #493c31; transform: translateX(-50%) rotate(8deg); }
-.apple-leaf { position: absolute; z-index: 1; top: 20%; left: 54%; width: 17%; height: 10%; border-radius: 100% 0 100% 0; background: #246346; transform: rotate(-20deg); }
-.frog-art { position: relative; }
-.frog-face { position: absolute; top: 38%; left: 50%; width: 56%; height: 40%; border: 3rpx solid #246346; border-radius: 48% 48% 44% 44%; background: #9cbd73; transform: translateX(-50%); }
-.frog-eye { position: absolute; z-index: 1; top: 27%; width: 20%; height: 20%; border: 3rpx solid #246346; border-radius: 50%; background: #fffefa; }
-.frog-eye-left { left: 29%; }
-.frog-eye-right { right: 29%; }
-.persimmon-art { position: relative; }
-.persimmon-fruit { position: absolute; top: 37%; left: 50%; width: 50%; height: 43%; border: 3rpx solid #bb6135; border-radius: 45% 45% 50% 50%; background: #e9853c; transform: translateX(-50%); }
-.persimmon-calyx { position: absolute; z-index: 1; top: 29%; left: 50%; width: 30%; height: 14%; border-radius: 50%; background: #246346; transform: translateX(-50%); }
+.apple-art { overflow: hidden; background: #f7f7f2; }
+.frog-art { overflow: hidden; background: #d9d2be; }
+.category-photo { display: block; width: 100%; height: 100%; }
+.persimmon-art { overflow: hidden; background: #f5f3ef; }
 .category-footer { display: flex; align-items: center; justify-content: space-between; gap: 8rpx; padding: 18rpx 2rpx 4rpx; }
 .category-name { font-size: 30rpx; font-weight: 600; }
 .category-arrow { color: #9e603d; font-size: 44rpx; line-height: 1; }
