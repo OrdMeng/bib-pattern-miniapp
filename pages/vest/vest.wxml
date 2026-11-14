@@ -1,0 +1,57 @@
+<scroll-view class="vest-page" scroll-y>
+  <view class="vest-shell">
+    <view class="vest-heading">
+      <text class="vest-title">对开马甲</text>
+      <text class="vest-subtitle">对襟内穿式 · 适合半岁至 1 岁</text>
+    </view>
+
+    <image
+      class="vest-finished"
+      src="/assets/vest-pattern-guide.jpg"
+      mode="widthFix"
+      bindtap="previewImage"
+      data-src="/assets/vest-pattern-guide.jpg"
+      aria-label="小熊马甲与蜜蜂装饰款式封面图"
+    />
+
+    <view class="vest-facts" aria-label="款式信息">
+      <view class="fact"><text class="fact-label">适用年龄</text><text class="fact-value">半岁–1岁</text></view>
+      <view class="fact"><text class="fact-label">穿着方式</text><text class="fact-value">内穿式</text></view>
+      <view class="fact"><text class="fact-label">开合方式</text><text class="fact-value">前中对襟</text></view>
+    </view>
+
+    <view class="section-heading material-heading">
+      <text class="section-title">准备材料</text>
+      <text class="section-note">面料和扣件用量以纸样及实际制作需要为准。</text>
+    </view>
+
+    <view class="material-list">
+      <view class="material-row"><text>表布</text><text>棉布或薄夹棉布</text></view>
+      <view class="material-row"><text>里布</text><text>柔软亲肤的棉布</text></view>
+      <view class="material-row"><text>装饰</text><text>小熊贴布、口袋面料</text></view>
+      <view class="material-row"><text>辅料</text><text>前襟扣件、缝纫线</text></view>
+    </view>
+
+    <view class="section-heading tutorial-heading">
+      <text class="section-title">制作顺序</text>
+      <text class="section-note">裁片名称与数量请以纸样标注为准</text>
+    </view>
+
+    <view class="step-list">
+      <view wx:for="{{steps}}" wx:key="title" class="step-row">
+        <text class="step-number">{{index + 1}}</text>
+        <view class="step-copy"><text class="step-title">{{item.title}}</text><text class="step-note">{{item.note}}</text></view>
+      </view>
+    </view>
+
+    <view class="pattern-section">
+      <view class="section-heading pattern-heading">
+        <text class="section-title">A4 纸样</text>
+        <text class="section-note">共 9 页 · 半岁至 1 岁</text>
+      </view>
+      <text class="pattern-note">按实际尺寸打印，不要选择“适合页面”；拼接前核对纸样边线和扣位标记。</text>
+      <text class="pattern-note">纸样包含前片、后片、领口和装饰裁片，具体裁片说明以 PDF 页面标注为准。</text>
+      <button class="pattern-button" bindtap="openPattern">打开对开马甲纸样 PDF</button>
+    </view>
+  </view>
+</scroll-view>

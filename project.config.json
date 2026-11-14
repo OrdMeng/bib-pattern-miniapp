@@ -3,48 +3,48 @@
   "packOptions": {
     "ignore": [
       {
-        "type": "folder",
-        "value": "output"
+        "value": "output",
+        "type": "folder"
       },
       {
-        "type": "file",
-        "value": "assets/apple-result.png"
+        "value": "assets/apple-result.png",
+        "type": "file"
       },
       {
-        "type": "file",
-        "value": "assets/carrot-result.png"
+        "value": "assets/carrot-result.png",
+        "type": "file"
       },
       {
-        "type": "file",
-        "value": "assets/frog-result.png"
+        "value": "assets/frog-result.png",
+        "type": "file"
       },
       {
-        "type": "file",
-        "value": "assets/persimmon-result.png"
+        "value": "assets/persimmon-result.png",
+        "type": "file"
       },
       {
-        "type": "file",
-        "value": "assets/apple-result.webp"
+        "value": "assets/apple-result.webp",
+        "type": "file"
       },
       {
-        "type": "file",
-        "value": "assets/carrot-result.webp"
+        "value": "assets/carrot-result.webp",
+        "type": "file"
       },
       {
-        "type": "file",
-        "value": "assets/frog-result.webp"
+        "value": "assets/frog-result.webp",
+        "type": "file"
       },
       {
-        "type": "file",
-        "value": "assets/persimmon-result.webp"
+        "value": "assets/persimmon-result.webp",
+        "type": "file"
       },
       {
-        "type": "file",
-        "value": "assets/frog-pattern.webp"
+        "value": "assets/frog-pattern.webp",
+        "type": "file"
       },
       {
-        "type": "file",
-        "value": "assets/persimmon-pattern.webp"
+        "value": "assets/persimmon-pattern.webp",
+        "type": "file"
       }
     ],
     "include": []

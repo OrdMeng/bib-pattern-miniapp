@@ -1,8 +1,8 @@
 Page({
   openCategory(event) {
     const category = event.currentTarget.dataset.category;
-    if (category === "bib") {
-      wx.navigateTo({ url: "/pages/index/index" });
+    if (category === "baby") {
+      wx.navigateTo({ url: "/pages/baby/baby" });
     } else if (category === "toy") {
       wx.navigateTo({ url: "/pages/toy/toy" });
     } else if (category === "dictionary") {

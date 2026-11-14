@@ -1,0 +1,16 @@
+.owl-page { box-sizing: border-box; height: 100vh; background: #f6f0e2; }
+.owl-shell { box-sizing: border-box; padding: 36rpx 32rpx 64rpx; color: #493c31; }
+.owl-heading { display: flex; flex-direction: column; gap: 8rpx; margin: 0 4rpx 22rpx; }
+.owl-title { font-size: 38rpx; font-weight: 600; }
+.owl-subtitle { color: #827567; font-size: 24rpx; }
+.owl-cover { display: block; width: 100%; margin-bottom: 34rpx; }
+.owl-section { display: flex; flex-direction: column; gap: 6rpx; margin: 0 4rpx 16rpx; }
+.section-title { font-size: 29rpx; font-weight: 600; }
+.section-note { color: #827567; font-size: 22rpx; line-height: 1.5; }
+.owl-pattern { display: block; width: 100%; margin-bottom: 20rpx; background: #fffefa; }
+.owl-button { display: flex; align-items: center; justify-content: center; height: 82rpx; margin: 0; padding: 0; border: 0; border-radius: 10rpx; background: #246346; color: #fffefa; font-size: 27rpx; line-height: normal; }
+.owl-button::after { border: 0; }
+
+@media (max-width: 360px) {
+  .owl-shell { padding-right: 24rpx; padding-left: 24rpx; }
+}

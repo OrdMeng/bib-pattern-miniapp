@@ -1,6 +1,15 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/baby/baby",
+    "pages/sunhat/sunhat",
+    "pages/vest/vest",
+    "pages/bee-vest/bee-vest",
+    "pages/sheep/sheep",
+    "pages/hippo/hippo",
+    "pages/owl/owl",
+    "pages/deer/deer",
+    "pages/polar-bear/polar-bear",
     "pages/toy/toy",
     "pages/dictionary/dictionary",
     "pages/beginner-guide/beginner-guide",

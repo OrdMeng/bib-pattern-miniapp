@@ -1,0 +1,62 @@
+<scroll-view class="bee-vest-page" scroll-y>
+  <view class="bee-vest-shell">
+    <view class="bee-vest-heading">
+      <text class="bee-vest-title">侧开扣棉马甲</text>
+      <text class="bee-vest-subtitle">挖掘机 × 小蜜蜂 · 内穿式 · 半岁至 1 岁</text>
+    </view>
+
+    <image
+      class="bee-vest-cover"
+      src="/assets/bee-vest-finished.jpg"
+      mode="widthFix"
+      bindtap="previewImage"
+      data-src="/assets/bee-vest-finished.jpg"
+      aria-label="挖掘机和小蜜蜂图案侧开扣棉马甲款式图"
+    />
+
+    <view class="bee-vest-facts" aria-label="款式信息">
+      <view class="fact"><text class="fact-label">适用年龄</text><text class="fact-value">半岁–1岁</text></view>
+      <view class="fact"><text class="fact-label">穿着方式</text><text class="fact-value">内穿式</text></view>
+      <view class="fact"><text class="fact-label">开合方式</text><text class="fact-value">侧开扣</text></view>
+    </view>
+
+    <view class="section-heading">
+      <text class="section-title">先看款式</text>
+      <text class="section-note">黄色主身搭配挖掘机口袋与小蜜蜂装饰，前片侧边用按扣开合。</text>
+    </view>
+
+    <view class="section-heading material-heading">
+      <text class="section-title">准备材料</text>
+      <text class="section-note">先把纸样、面料和扣件准备齐，制作时更顺手。</text>
+    </view>
+
+    <view class="material-list">
+      <view class="material-row"><text>表布</text><text>棉布或薄夹棉布</text></view>
+      <view class="material-row"><text>里布</text><text>柔软、亲肤的薄棉布</text></view>
+      <view class="material-row"><text>铺棉</text><text>薄型，可按保暖需求选择</text></view>
+      <view class="material-row"><text>辅料</text><text>按扣、缝纫线、包边条</text></view>
+    </view>
+
+    <view class="section-heading tutorial-heading">
+      <text class="section-title">制作顺序</text>
+      <text class="section-note">按纸样标记和以下顺序操作</text>
+    </view>
+
+    <view class="step-list">
+      <view wx:for="{{steps}}" wx:key="title" class="step-row">
+        <text class="step-number">{{index + 1}}</text>
+        <view class="step-copy"><text class="step-title">{{item.title}}</text><text class="step-note">{{item.note}}</text></view>
+      </view>
+    </view>
+
+    <view class="pattern-section">
+      <view class="section-heading pattern-heading">
+        <text class="section-title">A4 纸样</text>
+        <text class="section-note">共 9 页 · 半岁至 1 岁</text>
+      </view>
+      <text class="pattern-note">纸样包含前片、后片、领口与装饰裁片，具体裁片名称和拼接顺序以 PDF 页面标注为准。</text>
+      <text class="pattern-note">打印时请选择“实际大小 / 100%”，不要勾选“适合页面”；拼接前先核对校准标记。</text>
+      <button class="pattern-button" bindtap="openPattern">打开侧开扣马甲纸样 PDF</button>
+    </view>
+  </view>
+</scroll-view>

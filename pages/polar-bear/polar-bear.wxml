@@ -1,0 +1,46 @@
+<scroll-view class="polar-bear-page" scroll-y>
+  <view class="polar-bear-shell">
+    <view class="polar-bear-heading">
+      <text class="polar-bear-title">胖胖北极熊</text>
+      <text class="polar-bear-subtitle">布艺玩偶 · 纸样与制作参考</text>
+    </view>
+
+    <image
+      class="polar-bear-cover"
+      src="/assets/polar-bear-cover.jpeg"
+      mode="widthFix"
+      bindtap="previewImage"
+      data-src="/assets/polar-bear-cover.jpeg"
+      aria-label="胖胖北极熊布艺玩偶成品参考图"
+    />
+
+    <view class="polar-bear-intro">
+      <text class="intro-title">裁片说明</text>
+      <text class="intro-note">纸样内含头部、身体、腹部、耳朵、内腿、尾巴和鼻子等裁片。每张纸样顶部都有 10cm 标尺，打印或放大后请先核对比例。</text>
+    </view>
+
+    <view class="polar-bear-section">
+      <text class="section-title">北极熊纸样</text>
+      <text class="section-note">点按图片可放大查看标注和裁剪数量。</text>
+    </view>
+
+    <view class="pattern-list">
+      <view wx:for="{{patterns}}" wx:key="src" class="pattern-item">
+        <text class="pattern-label">{{index + 1}} · {{item.label}}</text>
+        <image
+          class="pattern-image"
+          src="{{item.src}}"
+          mode="widthFix"
+          bindtap="previewImage"
+          data-src="{{item.src}}"
+          aria-label="{{item.label}}纸样"
+        />
+      </view>
+    </view>
+
+    <view class="polar-bear-section process-heading">
+      <text class="section-title">制作提示</text>
+      <text class="section-note">先完成头部和身体，再填充并组合；鼻子、眼睛和围巾可按成品风格搭配。</text>
+    </view>
+  </view>
+</scroll-view>

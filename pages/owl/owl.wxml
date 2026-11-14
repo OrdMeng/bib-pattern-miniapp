@@ -1,0 +1,32 @@
+<scroll-view class="owl-page" scroll-y>
+  <view class="owl-shell">
+    <view class="owl-heading">
+      <text class="owl-title">可爱猫头鹰</text>
+      <text class="owl-subtitle">布艺玩偶 · A4 单页纸样</text>
+    </view>
+
+    <image
+      class="owl-cover"
+      src="/assets/owl-cover.jpg"
+      mode="widthFix"
+      bindtap="previewImage"
+      data-src="/assets/owl-cover.jpg"
+      aria-label="两只布艺猫头鹰玩偶成品参考图"
+    />
+
+    <view class="owl-section">
+      <text class="section-title">猫头鹰纸样</text>
+      <text class="section-note">点击预览图可放大查看，打印时按纸样标注使用 97% 比例。</text>
+    </view>
+    <image
+      class="owl-pattern"
+      src="/assets/owl-pattern.png"
+      mode="widthFix"
+      bindtap="previewImage"
+      data-src="/assets/owl-pattern.png"
+      aria-label="猫头鹰布艺玩偶 A4 纸样预览"
+    />
+
+    <button class="owl-button" bindtap="openPattern">打开猫头鹰纸样 PDF</button>
+  </view>
+</scroll-view>

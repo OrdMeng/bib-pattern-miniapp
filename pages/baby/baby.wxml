@@ -1,0 +1,48 @@
+<view class="baby-page">
+  <view class="baby-heading">
+    <text class="baby-title">宝宝衣物</text>
+    <text class="baby-subtitle">0–1 岁手作纸样</text>
+  </view>
+
+  <view class="baby-grid">
+    <button class="baby-card" data-item="bib" bindtap="openItem" aria-label="口水巾纸样">
+      <view class="baby-card-art bib-art" aria-hidden="true">
+        <view class="bib-shape"><view class="bib-neck"></view></view>
+      </view>
+      <view class="baby-card-footer">
+        <text class="baby-card-name">口水巾</text>
+        <text class="baby-card-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
+    <button class="baby-card" data-item="sunhat" bindtap="openItem" aria-label="太阳帽制作方法">
+      <view class="baby-card-art sunhat-art" aria-hidden="true">
+        <image class="baby-card-photo" src="/assets/sunhat-finished.jpg" mode="aspectFill" />
+      </view>
+      <view class="baby-card-footer">
+        <text class="baby-card-name">太阳帽</text>
+        <text class="baby-card-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
+    <button class="baby-card" data-item="vest" bindtap="openItem" aria-label="对开马甲教程">
+      <view class="baby-card-art vest-art" aria-hidden="true">
+        <image class="baby-card-photo" src="/assets/vest-pattern-guide.jpg" mode="aspectFit" />
+      </view>
+      <view class="baby-card-footer">
+        <text class="baby-card-name">对开马甲</text>
+        <text class="baby-card-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
+    <button class="baby-card" data-item="bee-vest" bindtap="openItem" aria-label="挖掘机蜜蜂侧开扣棉马甲教程">
+      <view class="baby-card-art bee-vest-art" aria-hidden="true">
+        <image class="baby-card-photo" src="/assets/bee-vest-finished.jpg" mode="aspectFit" />
+      </view>
+      <view class="baby-card-footer">
+        <text class="baby-card-name">侧开扣棉马甲</text>
+        <text class="baby-card-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+  </view>
+</view>

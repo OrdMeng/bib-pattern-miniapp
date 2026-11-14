@@ -1,0 +1,59 @@
+<scroll-view class="hippo-page" scroll-y>
+  <view class="hippo-shell">
+    <view class="hippo-heading">
+      <text class="hippo-title">河马玩偶</text>
+      <text class="hippo-subtitle">Heather Hippo · 成品约 33cm</text>
+    </view>
+
+    <image
+      class="hippo-cover"
+      src="/assets/hippo-cover.jpg"
+      mode="widthFix"
+      bindtap="previewImage"
+      data-src="/assets/hippo-cover.jpg"
+      aria-label="蓝绿色布艺河马玩偶效果图"
+    />
+
+    <view class="hippo-section">
+      <text class="section-title">准备材料</text>
+      <text class="section-note">材料规格参考原纸样说明。</text>
+    </view>
+    <view class="material-list">
+      <view class="material-row"><text>主布</text><text>棉布约 55 × 70cm</text></view>
+      <view class="material-row"><text>配色布</text><text>约 23 × 40cm</text></view>
+      <view class="material-row"><text>眼睛</text><text>黑色珠子或安全眼</text></view>
+      <view class="material-row"><text>填充</text><text>玩偶专用填充棉</text></view>
+      <view class="material-row"><text>工具</text><text>针线、剪刀、珠针、硬卡纸</text></view>
+    </view>
+
+    <view class="hippo-section process-heading">
+      <text class="section-title">制作步骤</text>
+      <text class="section-note">详情和裁片符号以纸样 PDF 原文为准。</text>
+    </view>
+    <view class="step-list">
+      <view class="step-row"><text class="step-number">1</text><view class="step-copy"><text class="step-title">制作纸样模板</text><text class="step-note">将纸样粘贴到硬卡纸上，再沿线剪下模板。</text></view></view>
+      <view class="step-row"><text class="step-number">2</text><view class="step-copy"><text class="step-title">描画并裁剪布片</text><text class="step-note">按纸样箭头方向排版；尾巴、肚皮和耳朵使用配色布。</text></view></view>
+      <view class="step-row"><text class="step-number">3</text><view class="step-copy"><text class="step-title">缝合身体和四肢</text><text class="step-note">根据纸样字母与定位点拼合身体、腿片和肚皮，缝份按纸样说明处理。</text></view></view>
+      <view class="step-row"><text class="step-number">4</text><view class="step-copy"><text class="step-title">组装头部并连接身体</text><text class="step-note">缝合侧头片、鼻口和头顶片，装好耳朵后将头部接到身体。</text></view></view>
+      <view class="step-row"><text class="step-number">5</text><view class="step-copy"><text class="step-title">填充并完成五官</text><text class="step-note">从预留口翻到正面，填入玩偶棉，固定眼睛并用梯子缝合闭口。</text></view></view>
+    </view>
+
+    <image
+      class="hippo-reference"
+      src="/assets/hippo-reference.jpg"
+      mode="widthFix"
+      bindtap="previewImage"
+      data-src="/assets/hippo-reference.jpg"
+      aria-label="灰色布艺河马成品参考图"
+    />
+
+    <view class="pattern-section">
+      <view class="hippo-section pattern-heading">
+        <text class="section-title">河马纸样 PDF</text>
+        <text class="section-note">共 9 页 · A4 横向</text>
+      </view>
+      <text class="pattern-note">PDF 内含材料清单、裁片布局、纸样和英文制作说明。</text>
+      <button class="pattern-button" bindtap="openPattern">打开河马玩偶纸样 PDF</button>
+    </view>
+  </view>
+</scroll-view>

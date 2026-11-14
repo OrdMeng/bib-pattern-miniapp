@@ -1,0 +1,64 @@
+<scroll-view class="sunhat-page" scroll-y>
+  <view class="sunhat-shell">
+    <view class="sunhat-heading">
+      <text class="sunhat-title">宝宝六片式遮阳帽</text>
+      <text class="sunhat-subtitle">制作教程 · 头围 39–55cm</text>
+    </view>
+
+    <view class="finished-photo-wrap">
+      <image class="finished-photo" src="/assets/sunhat-finished.jpg" mode="aspectFit" aria-label="蓝色碎花六片式宝宝太阳帽成品" />
+    </view>
+
+    <view class="section-heading">
+      <text class="section-title">准备纸样与面料</text>
+      <text class="section-note">点选头围尺寸，查看对应纸样</text>
+    </view>
+
+    <view class="size-list" aria-label="纸样头围尺寸">
+      <button
+        wx:for="{{sizes}}"
+        wx:key="*this"
+        class="size-item {{selectedSize === item ? 'selected' : ''}}"
+        data-size="{{item}}"
+        aria-pressed="{{selectedSize === item}}"
+        aria-label="查看 {{item}} 厘米头围纸样"
+        bindtap="selectSize"
+      >{{item}}</button>
+      <text class="size-unit">cm</text>
+    </view>
+
+    <view class="cutting-info">
+      <view class="cutting-row"><text>表布</text><text>6 片</text></view>
+      <view class="cutting-row"><text>里布</text><text>6 片</text></view>
+      <text class="print-note">打印纸样时按原文件标注使用 97% 比例。</text>
+    </view>
+
+    <view class="pattern-preview">
+      <view class="section-heading">
+        <text class="section-title">{{selectedSize}}cm 纸样</text>
+        <text class="section-note">A4 原图预览</text>
+      </view>
+      <image
+        class="pattern-image"
+        src="{{patternImage}}"
+        mode="widthFix"
+        bindtap="previewPattern"
+        aria-label="{{selectedSize}} 厘米太阳帽纸样预览"
+      />
+      <button class="pattern-button" bindtap="openSelectedPattern">打开 {{selectedSize}}cm PDF 纸样</button>
+    </view>
+
+    <view class="section-heading tutorial-heading">
+      <text class="section-title">制作步骤</text>
+      <text class="section-note">按顺序查看图文教程</text>
+    </view>
+
+    <image
+      class="tutorial-image"
+      src="/assets/sunhat-tutorial.jpg"
+      mode="widthFix"
+      bindtap="previewTutorial"
+      aria-label="太阳帽制作步骤图文教程，点按可放大查看"
+    />
+  </view>
+</scroll-view>

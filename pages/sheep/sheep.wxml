@@ -1,0 +1,43 @@
+<scroll-view class="sheep-page" scroll-y>
+  <view class="sheep-shell">
+    <view class="sheep-heading">
+      <text class="sheep-title">小羊玩偶</text>
+      <text class="sheep-subtitle">布艺玩偶 · 纸样与制作过程</text>
+    </view>
+
+    <image
+      class="sheep-cover"
+      src="/assets/sheep-cover.jpg"
+      mode="widthFix"
+      bindtap="previewImage"
+      data-src="/assets/sheep-cover.jpg"
+      aria-label="小羊布艺玩偶成品参考图"
+    />
+
+    <view class="sheep-section">
+      <text class="section-title">小羊纸样</text>
+      <text class="section-note">按纸样裁剪各部件，点击图片放大查看标注。</text>
+    </view>
+    <image
+      class="sheep-instruction-image"
+      src="/assets/sheep-pattern.jpg"
+      mode="widthFix"
+      bindtap="previewImage"
+      data-src="/assets/sheep-pattern.jpg"
+      aria-label="小羊玩偶纸样图"
+    />
+
+    <view class="sheep-section process-heading">
+      <text class="section-title">制作过程</text>
+      <text class="section-note">按图示顺序制作头部、身体并完成组合。</text>
+    </view>
+    <image
+      class="sheep-instruction-image"
+      src="/assets/sheep-tutorial.jpg"
+      mode="widthFix"
+      bindtap="previewImage"
+      data-src="/assets/sheep-tutorial.jpg"
+      aria-label="小羊玩偶制作过程图"
+    />
+  </view>
+</scroll-view>

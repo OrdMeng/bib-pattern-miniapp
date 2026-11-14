@@ -43,5 +43,55 @@
         <text class="category-arrow" aria-hidden="true">›</text>
       </view>
     </button>
+
+    <button class="category-card" data-category="sheep" bindtap="openCategory" aria-label="小羊玩偶制作教程">
+      <view class="category-art sheep-art">
+        <image class="category-photo" src="/assets/sheep-cover.jpg" mode="aspectFill" aria-hidden="true" />
+      </view>
+      <view class="category-footer">
+        <text class="category-name">小羊玩偶</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
+    <button class="category-card" data-category="deer" bindtap="openCategory" aria-label="小情侣小鹿制作教程">
+      <view class="category-art deer-art">
+        <image class="category-photo" src="/assets/deer-cover.jpg" mode="aspectFit" aria-hidden="true" />
+      </view>
+      <view class="category-footer">
+        <text class="category-name">小情侣小鹿</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
+    <button class="category-card" data-category="hippo" bindtap="openCategory" aria-label="河马玩偶制作教程">
+      <view class="category-art hippo-art">
+        <image class="category-photo" src="/assets/hippo-cover.jpg" mode="aspectFill" aria-hidden="true" />
+      </view>
+      <view class="category-footer">
+        <text class="category-name">河马玩偶</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
+    <button class="category-card" data-category="owl" bindtap="openCategory" aria-label="猫头鹰玩偶纸样">
+      <view class="category-art owl-art">
+        <image class="category-photo" src="/assets/owl-cover.jpg" mode="aspectFill" aria-hidden="true" />
+      </view>
+      <view class="category-footer">
+        <text class="category-name">猫头鹰</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
+    <button class="category-card" data-category="polar-bear" bindtap="openCategory" aria-label="胖胖北极熊制作教程">
+      <view class="category-art polar-bear-art">
+        <image class="category-photo" src="/assets/polar-bear-cover.jpeg" mode="aspectFit" aria-hidden="true" />
+      </view>
+      <view class="category-footer">
+        <text class="category-name">胖胖北极熊</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
   </view>
 </view>

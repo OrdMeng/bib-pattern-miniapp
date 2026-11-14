@@ -19,6 +19,11 @@
 .frog-art { overflow: hidden; background: #d9d2be; }
 .category-photo { display: block; width: 100%; height: 100%; }
 .persimmon-art { overflow: hidden; background: #f5f3ef; }
+.sheep-art { overflow: hidden; background: #dce8e9; }
+.hippo-art { overflow: hidden; background: #d7eeee; }
+.owl-art { overflow: hidden; background: #ece5dc; }
+.deer-art { overflow: hidden; background: #f6eee5; }
+.polar-bear-art { overflow: hidden; background: #e9e9e6; }
 .category-footer { display: flex; align-items: center; justify-content: space-between; gap: 8rpx; padding: 18rpx 2rpx 4rpx; }
 .category-name { font-size: 30rpx; font-weight: 600; }
 .category-arrow { color: #9e603d; font-size: 44rpx; line-height: 1; }

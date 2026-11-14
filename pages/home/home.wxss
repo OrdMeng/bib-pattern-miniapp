@@ -91,6 +91,17 @@
 .beginner-sign { display: flex; align-items: center; justify-content: center; width: 44%; height: 48%; border: 4rpx solid #df7650; border-radius: 14rpx; background: #fff8ed; transform: rotate(-5deg); }
 .beginner-mark { color: #9e603d; font-size: 64rpx; font-weight: 700; line-height: 1; }
 
+.baby-art { position: relative; overflow: hidden; background: #f3e4d5; }
+.baby-vest-icon { position: absolute; width: 31%; height: 48%; border: 4rpx solid #246346; border-radius: 12rpx 12rpx 18rpx 18rpx; background: #fff8ed; }
+.baby-vest-back { top: 30%; left: 27%; background: #e5a34a; transform: rotate(-9deg); }
+.baby-vest-front { top: 35%; right: 25%; background: #fff8ed; transform: rotate(7deg); }
+.baby-vest-neck { position: absolute; top: -4rpx; left: 50%; width: 36%; height: 23%; border: 4rpx solid #246346; border-top: 0; border-radius: 0 0 50% 50%; background: #f3e4d5; transform: translateX(-50%); }
+.baby-vest-placket { position: absolute; top: 21%; bottom: 0; left: 50%; border-left: 3rpx solid #b96f50; }
+.baby-vest-button { position: absolute; left: 58%; width: 8rpx; height: 8rpx; border-radius: 50%; background: #df7650; }
+.baby-vest-button-one { top: 37%; }
+.baby-vest-button-two { top: 53%; }
+.baby-vest-button-three { top: 69%; }
+
 .category-footer {
   display: flex;
   align-items: center;

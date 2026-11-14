@@ -1,0 +1,15 @@
+.sheep-page { box-sizing: border-box; height: 100vh; background: #f6f0e2; }
+.sheep-shell { box-sizing: border-box; padding: 36rpx 32rpx 64rpx; color: #493c31; }
+.sheep-heading { display: flex; flex-direction: column; gap: 8rpx; margin: 0 4rpx 22rpx; }
+.sheep-title { font-size: 38rpx; font-weight: 600; }
+.sheep-subtitle { color: #827567; font-size: 24rpx; }
+.sheep-cover { display: block; width: 100%; margin-bottom: 34rpx; }
+.sheep-section { display: flex; flex-direction: column; gap: 6rpx; margin: 0 4rpx 16rpx; }
+.section-title { font-size: 29rpx; font-weight: 600; }
+.section-note { color: #827567; font-size: 22rpx; line-height: 1.5; }
+.sheep-instruction-image { display: block; width: 100%; margin-bottom: 34rpx; }
+.process-heading { margin-top: 4rpx; }
+
+@media (max-width: 360px) {
+  .sheep-shell { padding-right: 24rpx; padding-left: 24rpx; }
+}

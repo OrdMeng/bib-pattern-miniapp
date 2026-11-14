@@ -1,0 +1,31 @@
+.hippo-page { box-sizing: border-box; height: 100vh; background: #f6f0e2; }
+.hippo-shell { box-sizing: border-box; padding: 36rpx 32rpx 64rpx; color: #493c31; }
+.hippo-heading { display: flex; flex-direction: column; gap: 8rpx; margin: 0 4rpx 22rpx; }
+.hippo-title { font-size: 38rpx; font-weight: 600; }
+.hippo-subtitle { color: #827567; font-size: 24rpx; }
+.hippo-cover { display: block; width: 100%; margin-bottom: 34rpx; }
+.hippo-section { display: flex; flex-direction: column; gap: 6rpx; margin: 0 4rpx 16rpx; }
+.section-title { font-size: 29rpx; font-weight: 600; }
+.section-note { color: #827567; font-size: 22rpx; line-height: 1.5; }
+.material-list { margin-bottom: 36rpx; padding: 0 18rpx 4rpx; background: #fffefa; }
+.material-row { display: flex; align-items: center; justify-content: space-between; gap: 18rpx; padding: 18rpx 0; border-bottom: 1rpx solid #eee5d8; font-size: 25rpx; }
+.material-row:last-child { border-bottom: 0; }
+.material-row text:last-child { color: #827567; text-align: right; font-size: 23rpx; }
+.process-heading { margin-bottom: 14rpx; }
+.step-list { margin-bottom: 34rpx; }
+.step-row { display: flex; gap: 16rpx; padding: 20rpx 4rpx; border-bottom: 1rpx solid #e5d9c5; }
+.step-number { display: flex; flex: 0 0 42rpx; align-items: center; justify-content: center; width: 42rpx; height: 42rpx; border-radius: 50%; background: #9e603d; color: #fffefa; font-size: 22rpx; font-variant-numeric: tabular-nums; }
+.step-copy { display: flex; flex: 1; flex-direction: column; gap: 7rpx; min-width: 0; }
+.step-title { font-size: 27rpx; font-weight: 600; }
+.step-note { color: #827567; font-size: 23rpx; line-height: 1.55; }
+.hippo-reference { display: block; width: 100%; margin-bottom: 34rpx; }
+.pattern-section { padding: 20rpx; background: #fffefa; }
+.pattern-heading { margin-right: 0; margin-left: 0; margin-bottom: 12rpx; }
+.pattern-note { display: block; color: #827567; font-size: 23rpx; line-height: 1.55; }
+.pattern-button { display: flex; align-items: center; justify-content: center; height: 82rpx; margin: 20rpx 0 0; padding: 0; border: 0; border-radius: 10rpx; background: #246346; color: #fffefa; font-size: 27rpx; line-height: normal; }
+.pattern-button::after { border: 0; }
+
+@media (max-width: 360px) {
+  .hippo-shell { padding-right: 24rpx; padding-left: 24rpx; }
+  .material-row text:last-child { font-size: 21rpx; }
+}

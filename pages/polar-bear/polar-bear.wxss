@@ -1,0 +1,20 @@
+.polar-bear-page { box-sizing: border-box; height: 100vh; background: #f6f0e2; }
+.polar-bear-shell { box-sizing: border-box; padding: 36rpx 32rpx 64rpx; color: #493c31; }
+.polar-bear-heading { display: flex; flex-direction: column; gap: 8rpx; margin: 0 4rpx 22rpx; }
+.polar-bear-title { font-size: 38rpx; font-weight: 600; }
+.polar-bear-subtitle { color: #827567; font-size: 24rpx; }
+.polar-bear-cover { display: block; width: 100%; margin-bottom: 28rpx; background: #fffefa; }
+.polar-bear-intro { display: flex; flex-direction: column; gap: 8rpx; margin-bottom: 34rpx; padding: 20rpx; background: #fffefa; }
+.intro-title { font-size: 27rpx; font-weight: 600; }
+.intro-note { color: #827567; font-size: 23rpx; line-height: 1.55; }
+.polar-bear-section { display: flex; flex-direction: column; gap: 6rpx; margin: 0 4rpx 16rpx; }
+.section-title { font-size: 29rpx; font-weight: 600; }
+.section-note { color: #827567; font-size: 22rpx; line-height: 1.5; }
+.pattern-list { margin-bottom: 36rpx; }
+.pattern-item { margin-bottom: 26rpx; }
+.pattern-label { display: block; margin: 0 4rpx 10rpx; color: #9e603d; font-size: 25rpx; font-weight: 600; }
+.pattern-image { display: block; width: 100%; background: #fffefa; }
+.process-heading { margin-top: 4rpx; }
+@media (max-width: 360px) {
+  .polar-bear-shell { padding-right: 24rpx; padding-left: 24rpx; }
+}

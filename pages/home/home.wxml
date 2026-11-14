@@ -5,12 +5,19 @@
   </view>
 
   <view class="category-grid">
-    <button class="category-card" data-category="bib" bindtap="openCategory" aria-label="口水巾，进入纸样生成">
-      <view class="category-art" aria-hidden="true">
-        <view class="bib-shape"><view class="bib-neck"></view></view>
+    <button class="category-card" data-category="baby" bindtap="openCategory" aria-label="宝宝衣物，0到1岁手作纸样">
+      <view class="category-art baby-art" aria-hidden="true">
+        <view class="baby-vest-icon baby-vest-back"></view>
+        <view class="baby-vest-icon baby-vest-front">
+          <view class="baby-vest-neck"></view>
+          <view class="baby-vest-placket"></view>
+          <view class="baby-vest-button baby-vest-button-one"></view>
+          <view class="baby-vest-button baby-vest-button-two"></view>
+          <view class="baby-vest-button baby-vest-button-three"></view>
+        </view>
       </view>
       <view class="category-footer">
-        <text class="category-name">口水巾</text>
+        <text class="category-name">宝宝衣物</text>
         <text class="category-arrow" aria-hidden="true">›</text>
       </view>
     </button>
@@ -51,5 +58,6 @@
         <text class="category-arrow" aria-hidden="true">›</text>
       </view>
     </button>
+
   </view>
 </view>
