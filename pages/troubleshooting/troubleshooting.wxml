@@ -1,0 +1,24 @@
+<view class="trouble-page">
+  <view class="trouble-heading">
+    <text class="eyebrow">FIX IT</text>
+    <text class="page-title">排障手册</text>
+    <text class="page-subtitle">先描述现象，再按原因逐项排查</text>
+  </view>
+
+  <view class="search-box"><text class="search-symbol">⌕</text><input value="{{query}}" placeholder="搜索问题或关键词" confirm-type="search" bindinput="searchIssues" aria-label="搜索问题" /></view>
+
+  <view class="issue-list">
+    <view wx:for="{{issues}}" wx:key="id" class="issue-item {{item.expanded ? 'is-expanded' : ''}}">
+      <button class="issue-head" data-id="{{item.id}}" bindtap="toggleIssue" aria-label="{{item.title}}">
+        <view class="issue-index">{{index + 1}}</view>
+        <view class="issue-summary"><text class="issue-title">{{item.title}}</text><text class="issue-tags">{{item.tags}}</text></view>
+        <text class="expand-icon issue-toggle">{{item.expanded ? '−' : '+'}}</text>
+      </button>
+      <view wx:if="{{item.expanded}}" class="issue-detail">
+        <view class="detail-row"><text class="detail-label">可能原因</text><text class="detail-copy">{{item.cause}}</text></view>
+        <view class="detail-row"><text class="detail-label">处理方法</text><text class="detail-copy">{{item.solution}}</text></view>
+      </view>
+    </view>
+    <view wx:if="{{issues.length === 0}}" class="empty-state">没有找到相关问题，可以换个关键词试试。</view>
+  </view>
+</view>

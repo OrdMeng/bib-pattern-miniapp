@@ -11,6 +11,8 @@ Page({
       wx.navigateTo({ url: "/pages/dictionary/dictionary" });
     } else if (category === "beginner-guide") {
       wx.navigateTo({ url: "/pages/beginner-guide/beginner-guide" });
+    } else if (category === "toolbox") {
+      wx.navigateTo({ url: "/pages/toolbox/toolbox" });
     }
   }
 });

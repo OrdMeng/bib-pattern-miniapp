@@ -9,3 +9,5 @@ input,
 slider {
   font-family: inherit;
 }
+
+button { box-sizing: border-box; min-width: 0; line-height: normal; }

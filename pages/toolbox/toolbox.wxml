@@ -1,0 +1,50 @@
+<scroll-view class="toolbox-page" scroll-y>
+  <view class="toolbox-heading">
+    <text class="eyebrow">SEWING KIT</text>
+    <text class="toolbox-title">缝纫工具箱</text>
+    <text class="toolbox-subtitle">从看懂纸样，到顺利完成每一步</text>
+  </view>
+
+  <view class="tool-grid">
+    <button class="tool-card" data-tool="print" bindtap="openTool" aria-label="打印指南">
+      <view class="tool-icon print-icon" aria-hidden="true"><view class="icon-art"><view class="print-paper"></view><view class="print-slot"></view></view></view>
+      <view class="tool-title-row"><text class="tool-name">打印指南</text><text class="tool-arrow" aria-hidden="true">›</text></view>
+      <text class="tool-note">比例、校准与 A4 拼接</text>
+    </button>
+
+    <button class="tool-card" data-tool="dictionary" bindtap="openTool" aria-label="术语词典">
+      <view class="tool-icon dictionary-icon" aria-hidden="true"><view class="icon-art"><view class="dictionary-page-icon"></view><view class="dictionary-page-icon second"></view></view></view>
+      <view class="tool-title-row"><text class="tool-name">术语词典</text><text class="tool-arrow" aria-hidden="true">›</text></view>
+      <text class="tool-note">看懂纸样上的专业词</text>
+    </button>
+
+    <button class="tool-card" data-tool="pitfalls" bindtap="openTool" aria-label="避坑清单">
+      <view class="tool-icon checklist-icon" aria-hidden="true"><view class="icon-art"><view class="check-line one"></view><view class="check-line two"></view><view class="check-line three"></view><view class="check-dot"></view></view></view>
+      <view class="tool-title-row"><text class="tool-name">避坑清单</text><text class="tool-arrow" aria-hidden="true">›</text></view>
+      <text class="tool-note">制作前先核对关键事项</text>
+    </button>
+
+    <button class="tool-card" data-tool="troubleshooting" bindtap="openTool" aria-label="排障手册">
+      <view class="tool-icon trouble-icon" aria-hidden="true"><view class="icon-art"><view class="trouble-circle">?</view><view class="trouble-needle"></view></view></view>
+      <view class="tool-title-row"><text class="tool-name">排障手册</text><text class="tool-arrow" aria-hidden="true">›</text></view>
+      <text class="tool-note">遇到问题时快速找到办法</text>
+    </button>
+
+    <button class="tool-card" data-tool="calculator" bindtap="openTool" aria-label="缝纫计算器">
+      <view class="tool-icon calculator-icon" aria-hidden="true"><view class="icon-art"><view class="calculator-screen"></view><view class="calculator-key key-one"></view><view class="calculator-key key-two"></view><view class="calculator-key key-three"></view><view class="calculator-key key-four"></view></view></view>
+      <view class="tool-title-row"><text class="tool-name">缝纫计算器</text><text class="tool-arrow" aria-hidden="true">›</text></view>
+      <text class="tool-note">松紧带、包边条和圆底</text>
+    </button>
+
+    <button class="tool-card" data-tool="fabric" bindtap="openTool" aria-label="布料宝典">
+      <view class="tool-icon fabric-icon" aria-hidden="true"><view class="icon-art"><view class="fabric-spool"></view><view class="fabric-thread"></view><view class="fabric-thread second"></view></view></view>
+      <view class="tool-title-row"><text class="tool-name">布料宝典</text><text class="tool-arrow" aria-hidden="true">›</text></view>
+      <text class="tool-note">选布、用针和处理建议</text>
+    </button>
+  </view>
+
+  <view class="toolbox-tip">
+    <text class="tip-mark">i</text>
+    <text class="tip-copy">建议先打开“打印指南”，确认纸样比例后再开始裁剪。</text>
+  </view>
+</scroll-view>

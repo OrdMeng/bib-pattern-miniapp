@@ -33,7 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80rpx;
+  width: 80rpx !important;
   height: 80rpx;
   padding: 0;
   border: 1rpx solid transparent;
@@ -62,7 +62,11 @@
 }
 
 .style-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
+  width: auto !important;
   flex: 0 0 calc(50% - 6rpx);
   min-width: 0;
   min-height: 84rpx;
@@ -73,7 +77,7 @@
   background: #f1e2d2;
   color: #9e603d;
   font-size: 26rpx;
-  line-height: 84rpx;
+  line-height: normal;
 }
 
 .style-button.active { background: #9e603d; color: #fffaf4; border-color: #9e603d; }
@@ -114,7 +118,7 @@
 .feedback.error { background: #f7e0dc; color: #a23d36; }
 
 .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 16rpx; margin-top: 28rpx; }
-.action-button { height: 84rpx; border-radius: 14rpx; font-size: 28rpx; line-height: 84rpx; }
+.action-button { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 84rpx; padding: 0; border-radius: 14rpx; font-size: 28rpx; line-height: normal; }
 .action-button.print { border: 1rpx solid #9e603d; background: #9e603d; color: #fffaf4; }
 .action-button.save { border: 1rpx solid #246346; background: #246346; color: #fffefa; }
 .action-button[disabled] { opacity: 0.45; }

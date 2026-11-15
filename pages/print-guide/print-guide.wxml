@@ -1,0 +1,35 @@
+<scroll-view class="guide-page" scroll-y>
+  <view class="guide-heading">
+    <text class="eyebrow">PRINT CHECK</text>
+    <text class="page-title">打印指南</text>
+    <text class="page-subtitle">先确认比例，再开始裁剪纸样</text>
+  </view>
+
+  <view class="notice notice-main">
+    <text class="notice-mark">1:1</text>
+    <view class="notice-copy"><text class="notice-title">优先选择“实际大小”</text><text class="notice-text">打印设置中不要选择“适合页面”或“缩放到可打印区域”。纸样需要按文件标注的比例输出。</text></view>
+  </view>
+
+  <view class="section-block">
+    <text class="section-title">打印前检查</text>
+    <view class="check-row"><text class="step-number">01</text><view><text class="row-title">确认纸样和尺寸</text><text class="row-note">确认下载的是当前项目、当前年龄或头围对应的文件。</text></view></view>
+    <view class="check-row"><text class="step-number">02</text><view><text class="row-title">打印校准页</text><text class="row-note">先打印带校准框的页面，用直尺测量标注的 5cm 或 10cm。</text></view></view>
+    <view class="check-row"><text class="step-number">03</text><view><text class="row-title">确认纸张方向</text><text class="row-note">按预览中的页面顺序打印，横向纸样不要被打印机自动旋转。</text></view></view>
+  </view>
+
+  <view class="section-block">
+    <text class="section-title">A4 拼接顺序</text>
+    <view class="join-flow"><view class="join-page">1</view><text class="join-line">→</text><view class="join-page">2</view><text class="join-line">→</text><view class="join-page">3</view><text class="join-line">→</text><view class="join-page">…</view></view>
+    <text class="section-note">沿纸样边线对齐后再粘贴，先拼横向，再拼纵向。拼接完成后核对裁片轮廓是否连续。</text>
+  </view>
+
+  <view class="section-block">
+    <text class="section-title">打印后检查</text>
+    <view class="bullet-row"><text class="bullet">•</text><text>校准框尺寸正确后，再裁剪纸样。</text></view>
+    <view class="bullet-row"><text class="bullet">•</text><text>确认纸样中的缝份、布纹线和牙口都清晰可见。</text></view>
+    <view class="bullet-row"><text class="bullet">•</text><text>裁剪前确认“裁 1 片 / 裁 2 片”和是否需要反向裁剪。</text></view>
+    <view class="bullet-row"><text class="bullet">•</text><text>不同项目的比例以项目详情页的提示为准。</text></view>
+  </view>
+
+  <view class="tip-box"><text class="tip-title">小提醒</text><text class="tip-text">如果校准框尺寸不对，不要用手动放大或缩小来补救，先检查打印对话框中的缩放设置。</text></view>
+</scroll-view>

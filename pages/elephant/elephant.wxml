@@ -5,9 +5,8 @@
       <text class="elephant-subtitle">布艺玩偶 · 亲子两款纸样</text>
     </view>
 
-    <view class="elephant-hero" aria-label="亲子象自有插画封面">
-      <view class="elephant-figure elephant-figure-child"><view class="figure-ear"></view><view class="figure-eye"></view><view class="figure-cheek"></view><view class="figure-trunk"></view><view class="figure-leg figure-leg-left"></view><view class="figure-leg figure-leg-right"></view></view>
-      <view class="elephant-figure elephant-figure-parent"><view class="figure-ear"></view><view class="figure-eye"></view><view class="figure-cheek"></view><view class="figure-trunk"></view><view class="figure-leg figure-leg-left"></view><view class="figure-leg figure-leg-right"></view></view>
+    <view class="elephant-hero" aria-label="亲子象布艺玩偶封面">
+      <image class="elephant-hero-image" src="/assets/elephant-cover.jpg" mode="aspectFit" aria-hidden="true" />
     </view>
 
     <view class="elephant-facts" aria-label="纸样信息">

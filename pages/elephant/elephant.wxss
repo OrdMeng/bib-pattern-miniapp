@@ -3,20 +3,8 @@
 .elephant-heading { display: flex; flex-direction: column; gap: 8rpx; margin: 0 4rpx 22rpx; }
 .elephant-title { font-size: 38rpx; font-weight: 600; }
 .elephant-subtitle { color: #827567; font-size: 24rpx; }
-.elephant-hero { position: relative; height: 420rpx; margin-bottom: 22rpx; overflow: hidden; background: #f0e6d9; }
-.elephant-hero::after { position: absolute; right: 10%; bottom: 9%; left: 10%; height: 10%; border-radius: 50%; background: rgba(73, 60, 49, .08); content: ""; }
-.elephant-figure { position: absolute; z-index: 1; bottom: 18%; width: 30%; height: 42%; border: 5rpx solid #246346; border-radius: 47% 47% 34% 34%; background: #d6a3a1; box-shadow: inset -7rpx -7rpx 0 rgba(73, 60, 49, .08); }
-.elephant-figure-child { left: 19%; transform: scale(.82); }
-.elephant-figure-parent { right: 18%; background: #8fb8bb; }
-.figure-ear { position: absolute; top: 17%; width: 33%; height: 38%; border: 4rpx solid #246346; border-radius: 50%; background: #e5a34a; }
-.elephant-figure-child .figure-ear { left: -18%; transform: rotate(-28deg); }
-.elephant-figure-parent .figure-ear { right: -18%; transform: rotate(28deg); }
-.figure-eye { position: absolute; top: 33%; right: 27%; width: 12rpx; height: 12rpx; border-radius: 50%; background: #493c31; }
-.figure-cheek { position: absolute; top: 42%; right: 20%; width: 16rpx; height: 9rpx; border-radius: 50%; background: rgba(223, 118, 80, .45); }
-.figure-trunk { position: absolute; bottom: -22%; left: 43%; width: 23%; height: 39%; border: 4rpx solid #246346; border-top: 0; border-radius: 0 0 50% 50%; background: inherit; }
-.figure-leg { position: absolute; bottom: -15%; width: 22%; height: 27%; border: 4rpx solid #246346; border-radius: 0 0 35% 35%; background: inherit; }
-.figure-leg-left { left: 20%; }
-.figure-leg-right { right: 20%; }
+.elephant-hero { display: flex; align-items: center; justify-content: center; height: 600rpx; margin-bottom: 22rpx; overflow: hidden; border-radius: 16rpx; background: #eadfce; }
+.elephant-hero-image { display: block; width: 100%; height: 100%; }
 .elephant-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rpx; margin-bottom: 34rpx; background: #e5d9c5; }
 .fact { display: flex; flex-direction: column; gap: 8rpx; padding: 18rpx 10rpx; background: #fffefa; text-align: center; }
 .fact-label { color: #827567; font-size: 21rpx; }
@@ -27,7 +15,7 @@
 .pattern-info { display: flex; flex-direction: column; gap: 10rpx; padding: 20rpx; background: #fffefa; }
 .pattern-title { font-size: 27rpx; font-weight: 600; }
 .pattern-note { color: #827567; font-size: 23rpx; line-height: 1.55; }
-.pattern-button { display: flex; align-items: center; justify-content: center; height: 82rpx; margin: 20rpx 0 0; padding: 0; border: 0; border-radius: 10rpx; background: #246346; color: #fffefa; font-size: 27rpx; line-height: normal; }
+.pattern-button { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 82rpx; margin: 20rpx 0 0; padding: 0; border: 0; border-radius: 10rpx; background: #246346; color: #fffefa; font-size: 27rpx; line-height: normal; }
 .pattern-button::after { border: 0; }
 
 @media (max-width: 360px) {

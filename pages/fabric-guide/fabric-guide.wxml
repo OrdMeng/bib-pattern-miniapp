@@ -1,0 +1,43 @@
+<scroll-view class="fabric-page" scroll-y>
+  <view class="fabric-heading">
+    <text class="eyebrow">FABRIC NOTES</text>
+    <text class="page-title">布料宝典</text>
+    <text class="page-subtitle">先定针线，再看布料的脾气</text>
+  </view>
+
+  <view class="intro-note"><text class="intro-mark">布</text><text class="intro-copy">买布不迷路：先查速查表确定机针、针距和张力，再打开布料图鉴看缩水、熨烫和脱散提醒。</text></view>
+
+  <view class="section-block">
+    <view class="section-heading"><text class="section-title">针号 × 针距 × 张力速查</text><text class="section-caption">第一次缝先用废布试两行</text></view>
+    <scroll-view class="needle-scroll" scroll-x>
+      <view class="needle-table">
+        <view class="needle-row needle-header"><text>布料</text><text>机针</text><text>针距</text><text>张力</text><text>要点</text></view>
+        <view wx:for="{{needleRows}}" wx:key="name" class="needle-row"><text>{{item.name}}</text><text>{{item.needle}}</text><text>{{item.stitch}}</text><text>{{item.tension}}</text><text>{{item.tip}}</text></view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="quick-start"><view class="quick-label">万能起步</view><text>11 号针（80）+ 针距 2.5mm + 张力居中 4</text><text class="quick-note">纯棉、棉麻、斜纹布都可以先从这组开始，再按线迹调整。</text></view>
+  <view class="warning-note"><text class="warning-mark">!</text><text><text class="warning-title">换布要换针</text>　薄布用细针，针织布用圆头针，牛仔和帆布换厚布针；跳线和断线时先检查机针。</text></view>
+
+  <view class="section-heading fabric-heading-secondary"><text class="section-title">常见布料图鉴</text><text class="section-caption">点开查看适合项目和处理方法</text></view>
+  <scroll-view class="filter-scroll" scroll-x>
+    <view class="filter-row"><button wx:for="{{filters}}" wx:key="*this" class="filter-button {{filter === item ? 'active' : ''}}" data-filter="{{item}}" bindtap="filterFabrics">{{item}}</button></view>
+  </scroll-view>
+
+  <view class="fabric-list">
+    <view wx:for="{{fabrics}}" wx:key="id" class="fabric-item {{item.expanded ? 'is-expanded' : ''}}">
+      <view class="fabric-head" data-id="{{item.id}}" bindtap="toggleFabric">
+        <view class="fabric-summary"><text class="fabric-name">{{item.name}}</text><text class="fabric-en">{{item.en}}</text><text class="fabric-use-short">适合：{{item.use}}</text></view>
+        <text class="fabric-toggle">{{item.expanded ? '−' : '+'}}</text>
+      </view>
+      <view wx:if="{{item.expanded}}" class="fabric-body">
+        <view class="meta-row"><view wx:for="{{item.meta}}" wx:key="*this" class="meta-chip"><text>{{item[0]}}</text><text class="meta-value">{{item[1]}}</text></view></view>
+        <text class="fabric-definition">{{item.definition}}</text>
+        <view class="tip-list"><view wx:for="{{item.tips}}" wx:key="*this" class="tip-row"><text class="tip-dot">•</text><text>{{item}}</text></view></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="fabric-note"><text class="note-title">给新手的选布顺序</text><text class="note-copy">优先选择不易滑动、厚度适中的纯棉或斜纹布。布料第一次使用前先预洗、晾干、熨平；不确定时先买一小块试缝，不要直接拿整米贵布开工。</text></view>
+</scroll-view>

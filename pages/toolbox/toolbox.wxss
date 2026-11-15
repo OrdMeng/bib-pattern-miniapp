@@ -1,0 +1,41 @@
+.toolbox-page { box-sizing: border-box; min-height: 100vh; padding: 48rpx 32rpx 64rpx; background: #f6f0e2; color: #493c31; }
+.toolbox-heading { display: flex; flex-direction: column; gap: 8rpx; margin: 12rpx 0 34rpx; }
+.eyebrow { color: #9e603d; font-size: 20rpx; font-weight: 700; letter-spacing: 3rpx; }
+.toolbox-title { font-size: 42rpx; font-weight: 600; }
+.toolbox-subtitle { color: #827567; font-size: 24rpx; }
+.tool-grid { display: grid; box-sizing: border-box; width: 100%; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20rpx; }
+.tool-card { position: relative; display: flex; box-sizing: border-box; width: 100% !important; min-width: 0; height: 270rpx; margin: 0; padding: 30rpx 20rpx 4rpx; flex-direction: column; align-items: flex-start; border: 2rpx solid #f0dfd0; border-radius: 16rpx; background: #fffefa; color: #493c31; text-align: left; }
+.tool-card::after { border: 0; }
+.tool-icon { position: relative; align-self: center; width: 108rpx; height: 108rpx; margin-bottom: 22rpx; border-radius: 16rpx; background: #f3e4d5; }
+.icon-art { position: absolute; top: 50%; left: 50%; width: 92rpx; height: 92rpx; transform: translate(-50%, -50%) scale(1.174); transform-origin: center; }
+.tool-title-row { display: flex; box-sizing: border-box; align-items: center; justify-content: space-between; width: 100%; gap: 8rpx; padding-right: 2rpx; }
+.tool-name { display: block; min-width: 0; font-size: 30rpx; font-weight: 600; line-height: 1.35; }
+.tool-note { display: block; width: 100%; max-width: none; min-height: 56rpx; margin-top: 6rpx; color: #827567; font-size: 21rpx; line-height: 1.45; }
+.tool-arrow { flex: 0 0 auto; color: #9e603d; font-size: 38rpx; line-height: 1.1; }
+.print-icon { background: #e7eee5; }
+.print-paper { position: absolute; top: 17rpx; left: 27rpx; width: 38rpx; height: 50rpx; border: 3rpx solid #246346; border-radius: 4rpx; background: #fff8ed; }
+.print-paper::after { position: absolute; right: 7rpx; bottom: 9rpx; left: 7rpx; height: 3rpx; background: #b96f50; box-shadow: 0 -8rpx #b96f50; content: ""; }
+.print-slot { position: absolute; right: 19rpx; bottom: 14rpx; left: 19rpx; height: 19rpx; border: 3rpx solid #246346; border-top: 0; border-radius: 0 0 5rpx 5rpx; background: #e5a34a; }
+.dictionary-icon { background: #f3e4d5; }
+.dictionary-page-icon { position: absolute; top: 21rpx; left: 20rpx; width: 39rpx; height: 48rpx; border: 3rpx solid #246346; border-radius: 4rpx; background: #fff8ed; transform: rotate(-8deg); }
+.dictionary-page-icon.second { left: 33rpx; border-color: #b96f50; background: #f9ecd9; transform: rotate(8deg); }
+.dictionary-page-icon::after { position: absolute; top: 15rpx; right: 7rpx; left: 7rpx; height: 3rpx; background: #b96f50; box-shadow: 0 9rpx #b96f50; content: ""; }
+.checklist-icon { background: #f7e7d7; }
+.check-line { position: absolute; left: 43rpx; width: 31rpx; height: 4rpx; border-radius: 2rpx; background: #9e603d; }
+.check-line.one { top: 28rpx; }.check-line.two { top: 45rpx; }.check-line.three { top: 62rpx; }
+.check-dot { position: absolute; top: 25rpx; left: 20rpx; width: 13rpx; height: 13rpx; border: 3rpx solid #246346; border-radius: 50%; box-shadow: 0 17rpx #fffefa, 0 34rpx #fffefa; background: #e5a34a; }
+.trouble-icon { background: #e7eee5; }
+.trouble-circle { position: absolute; top: 17rpx; left: 22rpx; display: flex; align-items: center; justify-content: center; width: 48rpx; height: 48rpx; border: 4rpx solid #df7650; border-radius: 50%; color: #9e603d; font-size: 34rpx; font-weight: 700; }
+.trouble-needle { position: absolute; right: 15rpx; bottom: 12rpx; width: 9rpx; height: 36rpx; border-radius: 6rpx; background: #246346; transform: rotate(42deg); }
+.calculator-icon { background: #f3e4d5; }
+.calculator-screen { position: absolute; top: 14rpx; right: 20rpx; left: 20rpx; height: 21rpx; border: 3rpx solid #246346; border-radius: 4rpx; background: #e7eee5; }
+.calculator-key { position: absolute; width: 14rpx; height: 14rpx; border-radius: 3rpx; background: #b96f50; }
+.key-one { top: 48rpx; left: 21rpx; }.key-two { top: 48rpx; left: 43rpx; }.key-three { top: 68rpx; left: 21rpx; }.key-four { top: 68rpx; left: 43rpx; }
+.fabric-icon { background: #f7e7d7; }
+.fabric-spool { position: absolute; top: 21rpx; left: 34rpx; width: 25rpx; height: 50rpx; border-radius: 10rpx; background: #df7650; box-shadow: 0 0 0 4rpx #9e603d; }
+.fabric-thread { position: absolute; top: 18rpx; left: 22rpx; width: 50rpx; height: 9rpx; border-radius: 50%; border: 3rpx solid #246346; background: #f7e7d7; }
+.fabric-thread.second { top: 64rpx; }
+.toolbox-tip { display: flex; box-sizing: border-box; align-items: flex-start; gap: 12rpx; width: 100%; margin-top: 28rpx; padding: 20rpx 22rpx; border-left: 6rpx solid #e5a34a; background: #fff8ed; }
+.tip-mark { display: flex; align-items: center; justify-content: center; flex: 0 0 34rpx; width: 34rpx; height: 34rpx; border-radius: 50%; background: #e5a34a; color: #fffefa; font-size: 22rpx; font-weight: 700; }
+.tip-copy { color: #6f5d4e; font-size: 23rpx; line-height: 1.55; }
+@media (max-width: 360px) { .toolbox-page { padding-right: 24rpx; padding-left: 24rpx; } .tool-grid { gap: 14rpx; } .tool-card { height: 262rpx; padding-top: 26rpx; padding-right: 16rpx; padding-left: 16rpx; padding-bottom: 4rpx; } }

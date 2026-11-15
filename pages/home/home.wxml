@@ -51,27 +51,17 @@
       </view>
     </button>
 
-    <button class="category-card" data-category="dictionary" bindtap="openCategory" aria-label="术语词典">
-      <view class="category-art dictionary-art" aria-hidden="true">
-        <view class="dictionary-book">
-          <view class="dictionary-spine"></view>
-          <view class="dictionary-line dictionary-line-one"></view>
-          <view class="dictionary-line dictionary-line-two"></view>
-          <view class="dictionary-line dictionary-line-three"></view>
-        </view>
+    <button class="category-card toolbox-card" data-category="toolbox" bindtap="openCategory" aria-label="缝纫工具箱">
+      <view class="category-art toolbox-art" aria-hidden="true">
+        <view class="toolbox-handle"></view>
+        <view class="toolbox-case"></view>
+        <view class="toolbox-lid"></view>
+        <view class="toolbox-latch"></view>
+        <view class="toolbox-stitch toolbox-stitch-one"></view>
+        <view class="toolbox-stitch toolbox-stitch-two"></view>
       </view>
       <view class="category-footer">
-        <text class="category-name">术语词典</text>
-        <text class="category-arrow" aria-hidden="true">›</text>
-      </view>
-    </button>
-
-    <button class="category-card" data-category="beginner-guide" bindtap="openCategory" aria-label="新手避坑">
-      <view class="category-art beginner-art" aria-hidden="true">
-        <view class="beginner-sign"><view class="beginner-mark">!</view></view>
-      </view>
-      <view class="category-footer">
-        <text class="category-name">新手避坑</text>
+        <text class="category-name">缝纫工具箱</text>
         <text class="category-arrow" aria-hidden="true">›</text>
       </view>
     </button>

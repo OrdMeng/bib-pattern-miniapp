@@ -1,0 +1,26 @@
+<scroll-view class="calculator-page" scroll-y>
+  <view class="calculator-heading">
+    <text class="eyebrow">MEASURE &amp; MAKE</text>
+    <text class="page-title">缝纫计算器</text>
+    <text class="page-subtitle">先估算，再用实物试做确认</text>
+  </view>
+
+  <view class="calculator-tabs">
+    <button class="calc-tab {{active === 'elastic' ? 'active' : ''}}" data-type="elastic" bindtap="switchCalculator">松紧带</button>
+    <button class="calc-tab {{active === 'binding' ? 'active' : ''}}" data-type="binding" bindtap="switchCalculator">包边条</button>
+    <button class="calc-tab {{active === 'circle' ? 'active' : ''}}" data-type="circle" bindtap="switchCalculator">圆底周长</button>
+  </view>
+
+  <view class="calculator-panel">
+    <text class="calc-title">{{calculator.title}}</text>
+    <text class="calc-description">{{calculator.description}}</text>
+    <view wx:for="{{calculator.fields}}" wx:key="key" class="field-row">
+      <text class="field-label">{{item.label}}</text>
+      <view class="field-control"><input type="digit" data-key="{{item.key}}" value="{{values[item.key]}}" placeholder="{{item.placeholder}}" bindinput="inputValue" /><text>{{item.unit}}</text></view>
+    </view>
+    <button class="calculate-button" bindtap="calculate">计算</button>
+    <view class="result-box"><text class="result-label">{{calculator.resultLabel}}</text><view><text class="result-number">{{result}}</text><text class="result-unit">cm</text></view></view>
+  </view>
+
+  <view class="formula-note"><text class="formula-title">使用提醒</text><text class="formula-copy">计算结果是起始参考值。松紧带、布料厚度和穿着松紧度都会影响最终尺寸，建议先用废布试做。</text></view>
+</scroll-view>

@@ -24,6 +24,7 @@
 
 .category-card {
   box-sizing: border-box;
+  width: 100% !important;
   min-width: 0;
   margin: 0;
   padding: 18rpx;
@@ -90,6 +91,14 @@
 .beginner-art { position: relative; }
 .beginner-sign { display: flex; align-items: center; justify-content: center; width: 44%; height: 48%; border: 4rpx solid #df7650; border-radius: 14rpx; background: #fff8ed; transform: rotate(-5deg); }
 .beginner-mark { color: #9e603d; font-size: 64rpx; font-weight: 700; line-height: 1; }
+
+.toolbox-art { position: relative; overflow: hidden; background: #e7eee5; }
+.toolbox-case { position: absolute; right: 22%; bottom: 25%; left: 22%; height: 34%; border: 4rpx solid #246346; border-radius: 8rpx 8rpx 12rpx 12rpx; background: #fff8ed; }
+.toolbox-handle { position: absolute; z-index: 1; top: 21%; left: 36%; width: 28%; height: 23%; border: 4rpx solid #246346; border-bottom: 0; border-radius: 10rpx 10rpx 0 0; }
+.toolbox-lid { position: absolute; z-index: 2; right: 19%; bottom: 48%; left: 19%; height: 12%; border: 4rpx solid #246346; border-radius: 5rpx; background: #e5a34a; }
+.toolbox-latch { position: absolute; z-index: 3; bottom: 43%; left: 46%; width: 8%; height: 11%; border: 3rpx solid #9e603d; border-radius: 3rpx; background: #df7650; }
+.toolbox-stitch { position: absolute; z-index: 3; bottom: 34%; width: 14%; height: 3rpx; border-radius: 2rpx; background: #b96f50; }
+.toolbox-stitch-one { left: 32%; }.toolbox-stitch-two { right: 32%; }
 
 .baby-art { position: relative; overflow: hidden; background: #f3e4d5; }
 .bags-art { overflow: hidden; background: #f3e4d5; }

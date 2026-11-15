@@ -17,6 +17,11 @@
     "pages/toy/toy",
     "pages/dictionary/dictionary",
     "pages/beginner-guide/beginner-guide",
+    "pages/toolbox/toolbox",
+    "pages/print-guide/print-guide",
+    "pages/troubleshooting/troubleshooting",
+    "pages/sewing-calculator/sewing-calculator",
+    "pages/fabric-guide/fabric-guide",
     "pages/index/index"
   ],
   "window": {

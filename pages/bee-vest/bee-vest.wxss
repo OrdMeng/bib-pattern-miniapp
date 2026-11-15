@@ -27,7 +27,7 @@
 .pattern-heading { margin-right: 0; margin-left: 0; margin-bottom: 12rpx; }
 .pattern-note { display: block; color: #827567; font-size: 23rpx; line-height: 1.55; }
 .pattern-note + .pattern-note { margin-top: 8rpx; }
-.pattern-button { display: flex; align-items: center; justify-content: center; height: 82rpx; margin: 20rpx 0 0; padding: 0; border: 0; border-radius: 10rpx; background: #246346; color: #fffefa; font-size: 27rpx; line-height: normal; }
+.pattern-button { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 82rpx; margin: 20rpx 0 0; padding: 0; border: 0; border-radius: 10rpx; background: #246346; color: #fffefa; font-size: 27rpx; line-height: normal; }
 .pattern-button::after { border: 0; }
 @media (max-width: 360px) {
   .bee-vest-shell { padding-right: 24rpx; padding-left: 24rpx; }

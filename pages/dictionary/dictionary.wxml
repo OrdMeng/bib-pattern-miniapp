@@ -10,12 +10,12 @@
       <view class="term-main">
         <view class="term-symbol" aria-hidden="true">{{item.symbol}}</view>
         <view class="term-content">
-          <text class="term-name">{{item.term}}</text>
+          <view class="term-name-row"><text class="term-name">{{item.term}}</text><text class="term-category">{{item.category}}</text></view>
           <text class="term-definition">{{item.definition}}</text>
         </view>
-        <text class="term-chevron" aria-hidden="true">{{expandedTerm === item.term ? '−' : '+'}}</text>
+        <text wx:if="{{item.visual}}" class="expand-icon term-chevron" aria-hidden="true">{{expandedTerm === item.term ? '−' : '+'}}</text>
       </view>
-      <view wx:if="{{expandedTerm === item.term}}" class="term-visual">
+      <view wx:if="{{expandedTerm === item.term && item.visual}}" class="term-visual">
         <view class="diagram-area diagram-{{item.visual}}">
           <block wx:if="{{item.visual === 'seam'}}">
             <view class="fabric-piece"><view class="seam-line"></view><view class="raw-edge"></view><view class="seam-measure"></view></view>
