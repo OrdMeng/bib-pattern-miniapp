@@ -1,0 +1,32 @@
+.bag-guide-page { box-sizing: border-box; height: 100vh; background: #f6f0e2; }
+.bag-guide-shell { box-sizing: border-box; padding: 36rpx 32rpx 64rpx; color: #493c31; }
+.bag-guide-heading { display: flex; flex-direction: column; gap: 8rpx; margin: 0 4rpx 22rpx; }
+.bag-guide-title { font-size: 38rpx; font-weight: 600; }
+.bag-guide-subtitle { color: #827567; font-size: 24rpx; }
+.guide-intro { display: flex; flex-direction: column; gap: 8rpx; margin-bottom: 34rpx; padding: 20rpx; background: #fffefa; }
+.intro-title { font-size: 27rpx; font-weight: 600; }
+.intro-note { color: #827567; font-size: 23rpx; line-height: 1.55; }
+.guide-section { display: flex; flex-direction: column; gap: 6rpx; margin: 0 4rpx 16rpx; }
+.section-title { font-size: 29rpx; font-weight: 600; }
+.section-note { color: #827567; font-size: 22rpx; line-height: 1.5; }
+.material-list { margin-bottom: 34rpx; padding: 0 18rpx 4rpx; background: #fffefa; }
+.material-row { display: flex; justify-content: space-between; gap: 16rpx; padding: 17rpx 0; border-bottom: 1rpx solid #eee5d8; font-size: 24rpx; }
+.material-row:last-child { border-bottom: 0; }
+.material-name { flex: 0 0 112rpx; font-weight: 600; }
+.material-note { flex: 1; color: #827567; text-align: right; font-size: 22rpx; }
+.steps-heading { margin-top: 4rpx; }
+.guide-steps { margin-bottom: 34rpx; }
+.guide-step { display: flex; gap: 14rpx; padding: 17rpx 4rpx; border-bottom: 1rpx solid #e5d9c5; }
+.guide-step:last-child { border-bottom: 0; }
+.step-number { display: flex; flex: 0 0 38rpx; align-items: center; justify-content: center; width: 38rpx; height: 38rpx; border-radius: 50%; background: #9e603d; color: #fffefa; font-size: 20rpx; font-variant-numeric: tabular-nums; }
+.step-copy { display: flex; flex: 1; flex-direction: column; gap: 5rpx; min-width: 0; }
+.step-title { font-size: 25rpx; font-weight: 600; }
+.step-note { color: #827567; font-size: 22rpx; line-height: 1.5; }
+.avoid-row { display: flex; flex-direction: column; gap: 6rpx; padding: 18rpx 20rpx; background: #fffefa; }
+.avoid-title { color: #9e603d; font-size: 26rpx; font-weight: 600; }
+.avoid-note { color: #827567; font-size: 22rpx; line-height: 1.55; }
+@media (max-width: 360px) {
+  .bag-guide-shell { padding-right: 24rpx; padding-left: 24rpx; }
+  .material-name { flex-basis: 96rpx; }
+  .material-note { font-size: 21rpx; }
+}

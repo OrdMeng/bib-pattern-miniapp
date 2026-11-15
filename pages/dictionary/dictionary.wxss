@@ -18,7 +18,7 @@
 
 .search-icon { margin-right: 12rpx; color: #827567; font-size: 38rpx; line-height: 1; }
 .search-input { flex: 1; min-width: 0; height: 78rpx; color: #493c31; font-size: 27rpx; }
-.clear-button { display: flex; align-items: center; justify-content: center; width: 52rpx; height: 52rpx; margin: 0; padding: 0; border: 0; border-radius: 50%; background: #f1e2d2; color: #725846; font-size: 36rpx; line-height: 1; }
+.clear-button { display: flex; flex: 0 0 52rpx; align-items: center; justify-content: center; width: 52rpx; min-width: 52rpx; max-width: 52rpx; height: 52rpx; min-height: 52rpx; max-height: 52rpx; box-sizing: border-box; margin: 0 0 0 12rpx; padding: 0; border: 0; border-radius: 50%; background: #f1e2d2; color: #725846; font-size: 36rpx; line-height: 52rpx; }
 .clear-button::after { border: 0; }
 
 .term-list { margin-top: 20rpx; }

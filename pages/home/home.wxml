@@ -34,6 +34,23 @@
       </view>
     </button>
 
+    <button class="category-card" data-category="bags" bindtap="openCategory" aria-label="包包分类，包含210款包包参考图">
+      <view class="category-art bags-art" aria-hidden="true">
+        <view class="bag-icon">
+          <view class="bag-handle"></view>
+          <view class="bag-body">
+            <view class="bag-pocket"></view>
+            <view class="bag-stitch bag-stitch-one"></view>
+            <view class="bag-stitch bag-stitch-two"></view>
+          </view>
+        </view>
+      </view>
+      <view class="category-footer">
+        <text class="category-name">包包</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
+
     <button class="category-card" data-category="dictionary" bindtap="openCategory" aria-label="术语词典">
       <view class="category-art dictionary-art" aria-hidden="true">
         <view class="dictionary-book">

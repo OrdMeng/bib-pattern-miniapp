@@ -93,5 +93,16 @@
         <text class="category-arrow" aria-hidden="true">›</text>
       </view>
     </button>
+
+    <button class="category-card" data-category="elephant" bindtap="openCategory" aria-label="亲子象玩偶纸样">
+      <view class="category-art elephant-art" aria-hidden="true">
+        <view class="elephant-icon elephant-child"><view class="elephant-ear"></view><view class="elephant-eye"></view><view class="elephant-trunk"></view><view class="elephant-foot elephant-foot-left"></view><view class="elephant-foot elephant-foot-right"></view></view>
+        <view class="elephant-icon elephant-parent"><view class="elephant-ear"></view><view class="elephant-eye"></view><view class="elephant-trunk"></view><view class="elephant-foot elephant-foot-left"></view><view class="elephant-foot elephant-foot-right"></view></view>
+      </view>
+      <view class="category-footer">
+        <text class="category-name">亲子象</text>
+        <text class="category-arrow" aria-hidden="true">›</text>
+      </view>
+    </button>
   </view>
 </view>

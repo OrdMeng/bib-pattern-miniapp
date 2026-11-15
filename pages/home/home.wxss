@@ -92,6 +92,14 @@
 .beginner-mark { color: #9e603d; font-size: 64rpx; font-weight: 700; line-height: 1; }
 
 .baby-art { position: relative; overflow: hidden; background: #f3e4d5; }
+.bags-art { overflow: hidden; background: #f3e4d5; }
+.bag-icon { position: relative; width: 55%; height: 60%; }
+.bag-body { position: absolute; right: 0; bottom: 0; left: 0; height: 72%; border: 4rpx solid #246346; border-radius: 12rpx 12rpx 18rpx 18rpx; background: #fff8ed; transform: rotate(-4deg); }
+.bag-handle { position: absolute; top: 0; left: 50%; width: 48%; height: 38%; border: 4rpx solid #246346; border-bottom: 0; border-radius: 50% 50% 0 0; transform: translateX(-50%) rotate(-4deg); }
+.bag-pocket { position: absolute; right: 16%; bottom: 16%; left: 16%; height: 24%; border: 3rpx solid #b96f50; border-radius: 6rpx; background: #f1e2d2; }
+.bag-stitch { position: absolute; left: 14%; width: 3rpx; height: 16%; border-radius: 2rpx; background: #df7650; }
+.bag-stitch-one { top: 24%; }
+.bag-stitch-two { top: 43%; }
 .baby-vest-icon { position: absolute; width: 31%; height: 48%; border: 4rpx solid #246346; border-radius: 12rpx 12rpx 18rpx 18rpx; background: #fff8ed; }
 .baby-vest-back { top: 30%; left: 27%; background: #e5a34a; transform: rotate(-9deg); }
 .baby-vest-front { top: 35%; right: 25%; background: #fff8ed; transform: rotate(7deg); }

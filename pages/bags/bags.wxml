@@ -1,0 +1,33 @@
+<scroll-view class="bags-page" scroll-y>
+  <view class="bags-shell">
+    <view class="bags-heading">
+      <text class="bags-title">包包</text>
+    </view>
+
+    <button class="guide-entry" bindtap="openGuide" aria-label="打开包包新手指南">
+      <view class="guide-entry-icon" aria-hidden="true">
+        <view class="guide-entry-line guide-entry-line-one"></view>
+        <view class="guide-entry-line guide-entry-line-two"></view>
+        <view class="guide-entry-line guide-entry-line-three"></view>
+      </view>
+      <view class="guide-entry-copy">
+        <text class="guide-entry-title">包包新手指南</text>
+        <text class="guide-entry-note">工具、选款、纸样和基础缝制顺序</text>
+      </view>
+      <text class="bag-arrow" aria-hidden="true">›</text>
+    </button>
+
+    <view class="bag-grid">
+      <button wx:for="{{bagImages}}" wx:key="*this" class="bag-item" data-index="{{index}}" bindtap="openBag" aria-label="打开包包 {{index + 1}} 详情">
+        <view class="bag-art">
+          <image class="bag-image" src="{{item}}" mode="aspectFit" lazy-load="true" />
+          <text class="bag-index">{{index + 1}}</text>
+        </view>
+        <view class="bag-footer">
+          <text class="bag-name">包包 {{index + 1}}</text>
+          <text class="bag-arrow" aria-hidden="true">›</text>
+        </view>
+      </button>
+    </view>
+  </view>
+</scroll-view>

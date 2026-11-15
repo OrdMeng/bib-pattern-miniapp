@@ -1,0 +1,40 @@
+<scroll-view class="bag-guide-page" scroll-y>
+  <view class="bag-guide-shell">
+    <view class="bag-guide-heading">
+      <text class="bag-guide-title">包包新手指南</text>
+      <text class="bag-guide-subtitle">从看图、裁剪到完成第一只包</text>
+    </view>
+
+    <view class="guide-intro">
+      <text class="intro-title">先选简单款</text>
+      <text class="intro-note">第一次做包，优先选择没有拉链、没有复杂侧褶的平面款。熟悉直线缝、里布和翻口后，再尝试立体包、拉链包和多层结构。</text>
+    </view>
+
+    <view class="guide-section">
+      <text class="section-title">准备这些</text>
+      <text class="section-note">工具先备齐，制作时少返工。</text>
+    </view>
+    <view class="material-list">
+      <view wx:for="{{materials}}" wx:key="name" class="material-row">
+        <text class="material-name">{{item.name}}</text>
+        <text class="material-note">{{item.note}}</text>
+      </view>
+    </view>
+
+    <view class="guide-section steps-heading">
+      <text class="section-title">通用制作顺序</text>
+      <text class="section-note">具体裁片和缝法，以对应包包详情图的标注为准。</text>
+    </view>
+    <view class="guide-steps">
+      <view wx:for="{{steps}}" wx:key="title" class="guide-step">
+        <text class="step-number">{{index + 1}}</text>
+        <view class="step-copy"><text class="step-title">{{item.title}}</text><text class="step-note">{{item.note}}</text></view>
+      </view>
+    </view>
+
+    <view class="avoid-row">
+      <text class="avoid-title">新手避坑</text>
+      <text class="avoid-note">先做纸样小样，确认尺寸和开口方向；拉链、厚铺棉、包边和立体侧褶可以放到熟悉基础缝后再挑战。</text>
+    </view>
+  </view>
+</scroll-view>

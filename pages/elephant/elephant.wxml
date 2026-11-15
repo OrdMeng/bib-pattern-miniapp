@@ -1,0 +1,32 @@
+<scroll-view class="elephant-page" scroll-y>
+  <view class="elephant-shell">
+    <view class="elephant-heading">
+      <text class="elephant-title">亲子象</text>
+      <text class="elephant-subtitle">布艺玩偶 · 亲子两款纸样</text>
+    </view>
+
+    <view class="elephant-hero" aria-label="亲子象自有插画封面">
+      <view class="elephant-figure elephant-figure-child"><view class="figure-ear"></view><view class="figure-eye"></view><view class="figure-cheek"></view><view class="figure-trunk"></view><view class="figure-leg figure-leg-left"></view><view class="figure-leg figure-leg-right"></view></view>
+      <view class="elephant-figure elephant-figure-parent"><view class="figure-ear"></view><view class="figure-eye"></view><view class="figure-cheek"></view><view class="figure-trunk"></view><view class="figure-leg figure-leg-left"></view><view class="figure-leg figure-leg-right"></view></view>
+    </view>
+
+    <view class="elephant-facts" aria-label="纸样信息">
+      <view class="fact"><text class="fact-label">类型</text><text class="fact-value">亲子玩偶</text></view>
+      <view class="fact"><text class="fact-label">纸样页数</text><text class="fact-value">3 页</text></view>
+      <view class="fact"><text class="fact-label">纸张</text><text class="fact-value">A4</text></view>
+    </view>
+
+    <view class="section-heading">
+      <text class="section-title">纸样内容</text>
+      <text class="section-note">包含象身、头顶、尾巴和小象耳朵等裁片；原文件中带有来源标识。</text>
+    </view>
+
+    <view class="pattern-info">
+      <text class="pattern-title">打印提示</text>
+      <text class="pattern-note">共 3 页 A4，打印时按纸样标注的 97% 比例输出。</text>
+      <text class="pattern-note">拼接或裁剪前先核对纸样中的定位字母和裁片数量。</text>
+    </view>
+
+    <button class="pattern-button" bindtap="openPattern">打开亲子象纸样 PDF</button>
+  </view>
+</scroll-view>

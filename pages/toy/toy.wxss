@@ -22,6 +22,19 @@
 .sheep-art { overflow: hidden; background: #dce8e9; }
 .hippo-art { overflow: hidden; background: #d7eeee; }
 .owl-art { overflow: hidden; background: #ece5dc; }
+.elephant-art { position: relative; overflow: hidden; background: #f0e6d9; }
+.elephant-art::after { position: absolute; right: 12%; bottom: 12%; left: 12%; height: 10%; border-radius: 50%; background: rgba(73, 60, 49, .08); content: ""; }
+.elephant-icon { position: absolute; z-index: 1; bottom: 25%; width: 29%; height: 33%; border: 3rpx solid #246346; border-radius: 49% 49% 38% 38%; background: #d6a3a1; box-shadow: inset -5rpx -5rpx 0 rgba(73, 60, 49, .08); }
+.elephant-child { left: 24%; transform: scale(.82); }
+.elephant-parent { right: 23%; background: #8fb8bb; }
+.elephant-ear { position: absolute; top: 18%; width: 35%; height: 39%; border: 3rpx solid #246346; border-radius: 50%; background: #e5a34a; box-shadow: inset 3rpx 3rpx 0 rgba(255, 250, 244, .35); }
+.elephant-child .elephant-ear { left: -21%; transform: rotate(-28deg); }
+.elephant-parent .elephant-ear { right: -21%; transform: rotate(28deg); }
+.elephant-eye { position: absolute; top: 36%; right: 27%; width: 7rpx; height: 7rpx; border-radius: 50%; background: #493c31; }
+.elephant-trunk { position: absolute; bottom: -20%; left: 42%; width: 24%; height: 39%; border: 3rpx solid #246346; border-top: 0; border-radius: 0 0 50% 50%; background: inherit; }
+.elephant-foot { position: absolute; bottom: -12%; width: 24%; height: 21%; border: 3rpx solid #246346; border-radius: 0 0 38% 38%; background: inherit; }
+.elephant-foot-left { left: 17%; }
+.elephant-foot-right { right: 17%; }
 .deer-art { overflow: hidden; background: #f6eee5; }
 .polar-bear-art { overflow: hidden; background: #e9e9e6; }
 .category-footer { display: flex; align-items: center; justify-content: space-between; gap: 8rpx; padding: 18rpx 2rpx 4rpx; }

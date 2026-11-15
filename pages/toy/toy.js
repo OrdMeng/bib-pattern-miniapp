@@ -15,6 +15,8 @@ Page({
       wx.navigateTo({ url: "/pages/hippo/hippo" });
     } else if (category === "owl") {
       wx.navigateTo({ url: "/pages/owl/owl" });
+    } else if (category === "elephant") {
+      wx.navigateTo({ url: "/pages/elephant/elephant" });
     } else if (category === "deer") {
       wx.navigateTo({ url: "/pages/deer/deer" });
     } else if (category === "polar-bear") {

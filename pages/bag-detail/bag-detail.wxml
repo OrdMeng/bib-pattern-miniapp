@@ -1,0 +1,27 @@
+<scroll-view class="bag-detail-page" scroll-y>
+  <view class="bag-detail-shell">
+    <view class="bag-detail-heading">
+      <text class="bag-detail-title">{{title}}</text>
+      <text class="bag-detail-subtitle">包包分类 · 第 {{number}} 款参考图</text>
+    </view>
+
+    <image
+      class="bag-detail-cover"
+      src="{{image}}"
+      mode="widthFix"
+      bindtap="previewImage"
+      aria-label="{{title}}大图，点按放大查看"
+    />
+
+    <view class="bag-detail-info">
+      <text class="info-title">资料说明</text>
+      <text class="info-note">这是原始包包参考图，可能包含成品、纸样或制作步骤。点按图片可放大查看细节。</text>
+      <text class="info-note">裁剪尺寸、缝份和制作顺序请以图片中的标注为准。</text>
+    </view>
+
+    <view class="detail-reminder">
+      <text class="reminder-title">新手提示</text>
+      <text class="reminder-note">先把这张图当作结构参考，确认资料类型、尺寸比例、裁片数量和开口方向，再开始裁剪。通用的工具清单和制作流程可从包包分类页进入“包包新手指南”。</text>
+    </view>
+  </view>
+</scroll-view>

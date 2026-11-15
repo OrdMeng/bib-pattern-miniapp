@@ -1,0 +1,15 @@
+.bag-detail-page { box-sizing: border-box; height: 100vh; background: #f6f0e2; }
+.bag-detail-shell { box-sizing: border-box; padding: 36rpx 32rpx 64rpx; color: #493c31; }
+.bag-detail-heading { display: flex; flex-direction: column; gap: 8rpx; margin: 0 4rpx 22rpx; }
+.bag-detail-title { font-size: 38rpx; font-weight: 600; }
+.bag-detail-subtitle { color: #827567; font-size: 24rpx; }
+.bag-detail-cover { display: block; width: 100%; margin-bottom: 34rpx; background: #fffefa; }
+.bag-detail-info { display: flex; flex-direction: column; gap: 9rpx; padding: 20rpx; background: #fffefa; }
+.info-title { font-size: 27rpx; font-weight: 600; }
+.info-note { color: #827567; font-size: 23rpx; line-height: 1.55; }
+.detail-reminder { display: flex; flex-direction: column; gap: 8rpx; margin-top: 34rpx; padding: 20rpx; background: #fffefa; }
+.reminder-title { color: #9e603d; font-size: 27rpx; font-weight: 600; }
+.reminder-note { color: #827567; font-size: 23rpx; line-height: 1.55; }
+@media (max-width: 360px) {
+  .bag-detail-shell { padding-right: 24rpx; padding-left: 24rpx; }
+}
