@@ -1,7 +1,7 @@
 <scroll-view class="page" scroll-y enable-flex>
   <view class="app-shell">
     <view class="header">
-      <button class="icon-button" aria-label="返回" bindtap="handleBack">‹</button>
+      <view aria-hidden="true"></view>
       <view class="title-group">
         <text class="title">{{isPersimmon ? '柿子纸样' : isFrog ? '小青蛙纸样' : isApple ? '苹果纸样' : isCarrot ? '胡萝卜纸样' : '口水巾 · 纸样生成'}}</text>
         <text class="subtitle">{{isPersimmon ? '果实 4片 · 叶子 8片 · 果蒂 1片' : isFrog ? '头 · 身体 · 眼皮 · 眼球 · 胳膊 · 背带裤' : isApple ? '苹果片 6片 · 叶子 2片' : isCarrot ? '主体 1片 · 叶片 6片' : '参数调整后即时更新'}}</text>
@@ -17,7 +17,7 @@
     <view class="paper-panel">
       <view class="paper-caption">
         <text class="kind-label">{{kindLabel}}</text>
-        <text class="proof">{{isFrog || isPersimmon ? '原图纸样' : '示意轮廓 · 待样片验证'}}</text>
+        <text class="proof">{{isApple || isFrog || isPersimmon ? '原图纸样' : '示意轮廓 · 待样片验证'}}</text>
       </view>
       <canvas id="patternCanvas" type="2d" class="pattern-canvas" aria-label="{{canvasDescription}}"></canvas>
       <view class="canvas-description" aria-live="polite">{{canvasDescription}}</view>
@@ -63,8 +63,8 @@
         <input class="neck-input" type="digit" value="{{neck}}" maxlength="4" placeholder="20-50" bindblur="changeNeck" aria-label="脖围，20到50厘米，步进0.5厘米" />
       </block>
       <view class="seam-row">
-        <view><text class="seam-title">{{isFrog || isPersimmon ? '原图纸样' : '显示缝份'}}</text><text class="seam-note">{{isFrog || isPersimmon ? '图片自带线条 · 打印前请校准尺寸' : '固定 1cm · 灰色虚线'}}</text></view>
-        <switch wx:if="{{!isFrog && !isPersimmon}}" checked="{{seam}}" color="#9e603d" bindchange="toggleSeam" aria-label="显示缝份"></switch>
+        <view><text class="seam-title">{{isApple || isFrog || isPersimmon ? '原图纸样' : '显示缝份'}}</text><text class="seam-note">{{isApple || isFrog || isPersimmon ? '图片自带线条 · 打印前请按A4 100%比例输出' : '固定 1cm · 灰色虚线'}}</text></view>
+        <switch wx:if="{{!isApple && !isFrog && !isPersimmon}}" checked="{{seam}}" color="#9e603d" bindchange="toggleSeam" aria-label="显示缝份"></switch>
       </view>
     </view>
 

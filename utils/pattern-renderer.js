@@ -83,7 +83,7 @@ function drawPattern(ctx, width, height, state, details) {
   ctx.clearRect(0, 0, width, height);
   ctx.fillStyle = COLORS.paper;
   ctx.fillRect(0, 0, width, height);
-  if ((state.kind === "frog" || state.kind === "persimmon") && state.referenceImage) {
+  if ((state.kind === "apple" || state.kind === "frog" || state.kind === "persimmon") && state.referenceImage) {
     const image = state.referenceImage;
     const imageScale = Math.min((width - 16) / image.width, (height - 16) / image.height);
     const imageWidth = image.width * imageScale;

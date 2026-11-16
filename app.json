@@ -3,8 +3,6 @@
     "pages/home/home",
     "pages/baby/baby",
     "pages/sunhat/sunhat",
-    "pages/vest/vest",
-    "pages/bee-vest/bee-vest",
     "pages/sheep/sheep",
     "pages/hippo/hippo",
     "pages/owl/owl",
@@ -23,6 +21,15 @@
     "pages/sewing-calculator/sewing-calculator",
     "pages/fabric-guide/fabric-guide",
     "pages/index/index"
+  ],
+  "subpackages": [
+    {
+      "root": "subpackages/patterns",
+      "pages": [
+        "vest/vest",
+        "bee-vest/bee-vest"
+      ]
+    }
   ],
   "window": {
     "navigationBarTitleText": "口水巾纸样",

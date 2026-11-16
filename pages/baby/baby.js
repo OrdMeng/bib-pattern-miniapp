@@ -6,9 +6,9 @@ Page({
     } else if (item === "sunhat") {
       wx.navigateTo({ url: "/pages/sunhat/sunhat" });
     } else if (item === "vest") {
-      wx.navigateTo({ url: "/pages/vest/vest" });
+      wx.navigateTo({ url: "/subpackages/patterns/vest/vest" });
     } else if (item === "bee-vest") {
-      wx.navigateTo({ url: "/pages/bee-vest/bee-vest" });
+      wx.navigateTo({ url: "/subpackages/patterns/bee-vest/bee-vest" });
     }
   }
 });

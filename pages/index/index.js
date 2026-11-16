@@ -68,18 +68,27 @@ Page({
       this.pixelRatio = dpr || 1;
       item.node.width = item.width * this.pixelRatio;
       item.node.height = item.height * this.pixelRatio;
-      if (this.data.isFrog || this.data.isPersimmon) {
+      if (this.data.isApple || this.data.isFrog || this.data.isPersimmon) {
         const image = item.node.createImage();
         image.onload = () => {
+          if (this.data.isApple) this.appleReferenceImage = image;
           if (this.data.isFrog) this.frogReferenceImage = image;
           if (this.data.isPersimmon) this.persimmonReferenceImage = image;
           this.renderPattern();
         };
         image.onerror = () => this.setFeedback(
-          this.data.isPersimmon ? "柿子纸样图片加载失败，请重新打开页面。" : "青蛙纸样图片加载失败，请重新打开页面。",
+          this.data.isApple
+            ? "苹果纸样图片加载失败，请重新打开页面。"
+            : this.data.isPersimmon
+            ? "柿子纸样图片加载失败，请重新打开页面。"
+            : "青蛙纸样图片加载失败，请重新打开页面。",
           "error"
         );
-        image.src = this.data.isPersimmon ? "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/persimmon-pattern.jpg" : "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/frog-pattern.jpg";
+        image.src = this.data.isApple
+          ? "../../assets/apple-result.jpg"
+          : this.data.isPersimmon
+          ? "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/persimmon-pattern.jpg"
+          : "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/frog-pattern.jpg";
         return;
       }
       this.renderPattern();
@@ -96,7 +105,9 @@ Page({
       count: Number(this.data.count),
       size: Number(this.data.size),
       overlap: Number(this.data.overlap),
-      referenceImage: this.data.isPersimmon
+      referenceImage: this.data.isApple
+        ? this.appleReferenceImage || null
+        : this.data.isPersimmon
         ? this.persimmonReferenceImage || null
         : this.frogReferenceImage || null
     };
@@ -119,7 +130,7 @@ Page({
         : this.data.isFrog
         ? "小青蛙纸样，显示用户提供的原始纸样图片；该图片没有尺寸标尺，请打印前自行校准。"
         : this.data.isApple
-        ? "苹果纸样，包含6片苹果主体和2片叶子，绿色实线为裁剪线，灰色虚线为1厘米缝份，包含5厘米比例尺。"
+        ? "苹果原图纸样，包含苹果头部6片和苹果叶子2片；打印前请按A4纸张100%比例输出。"
         : this.data.isCarrot
         ? "胡萝卜纸样，包含1片主体和6片叶片，标注尖角角度及左右边长，绿色实线为裁剪线，灰色虚线为1厘米缝份，包含5厘米比例尺。"
         : `${this.data.kindLabel}，${state.neck}厘米脖围，绿色实线为成品线，灰色虚线为1厘米缝份，包含5厘米比例尺。`
