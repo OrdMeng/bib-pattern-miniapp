@@ -68,23 +68,28 @@ Page({
       this.pixelRatio = dpr || 1;
       item.node.width = item.width * this.pixelRatio;
       item.node.height = item.height * this.pixelRatio;
-      if (this.data.isApple || this.data.isFrog || this.data.isPersimmon) {
+      if (this.data.isCarrot || this.data.isApple || this.data.isFrog || this.data.isPersimmon) {
         const image = item.node.createImage();
         image.onload = () => {
+          if (this.data.isCarrot) this.carrotReferenceImage = image;
           if (this.data.isApple) this.appleReferenceImage = image;
           if (this.data.isFrog) this.frogReferenceImage = image;
           if (this.data.isPersimmon) this.persimmonReferenceImage = image;
           this.renderPattern();
         };
         image.onerror = () => this.setFeedback(
-          this.data.isApple
+          this.data.isCarrot
+            ? "胡萝卜纸样图片加载失败，请重新打开页面。"
+            : this.data.isApple
             ? "苹果纸样图片加载失败，请重新打开页面。"
             : this.data.isPersimmon
             ? "柿子纸样图片加载失败，请重新打开页面。"
             : "青蛙纸样图片加载失败，请重新打开页面。",
           "error"
         );
-        image.src = this.data.isApple
+        image.src = this.data.isCarrot
+          ? "../../assets/carrot-pattern.png"
+          : this.data.isApple
           ? "../../assets/apple-result.jpg"
           : this.data.isPersimmon
           ? "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/persimmon-pattern.jpg"
@@ -105,7 +110,9 @@ Page({
       count: Number(this.data.count),
       size: Number(this.data.size),
       overlap: Number(this.data.overlap),
-      referenceImage: this.data.isApple
+      referenceImage: this.data.isCarrot
+        ? this.carrotReferenceImage || null
+        : this.data.isApple
         ? this.appleReferenceImage || null
         : this.data.isPersimmon
         ? this.persimmonReferenceImage || null
@@ -123,7 +130,9 @@ Page({
     ctx.scale(this.pixelRatio, this.pixelRatio);
     renderer.drawPattern(ctx, this.canvasWidth, this.canvasHeight, state, details);
     this.setData({
-      readout: geometry.getReadout(state, details),
+      readout: this.data.isCarrot
+        ? "主体 1片 · 叶片 6片 · 主体直边高 10cm · 上弧长 12cm · 叶片约 4 × 2cm"
+        : geometry.getReadout(state, details),
       patternValid: details.valid,
       canvasDescription: this.data.isPersimmon
         ? "柿子原图纸样，包含果实4片、叶子8片和果蒂1片，图片已预留1厘米缝份。"
@@ -132,7 +141,7 @@ Page({
         : this.data.isApple
         ? "苹果原图纸样，包含苹果头部6片和苹果叶子2片；打印前请按A4纸张100%比例输出。"
         : this.data.isCarrot
-        ? "胡萝卜纸样，包含1片主体和6片叶片，标注尖角角度及左右边长，绿色实线为裁剪线，灰色虚线为1厘米缝份，包含5厘米比例尺。"
+        ? "胡萝卜原图纸样，包含主体1片和叶子6片；打印前请按A4纸张100%比例输出。"
         : `${this.data.kindLabel}，${state.neck}厘米脖围，绿色实线为成品线，灰色虚线为1厘米缝份，包含5厘米比例尺。`
     });
     if (details.error) this.setFeedback(details.error, "error");

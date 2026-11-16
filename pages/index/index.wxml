@@ -17,7 +17,7 @@
     <view class="paper-panel">
       <view class="paper-caption">
         <text class="kind-label">{{kindLabel}}</text>
-        <text class="proof">{{isApple || isFrog || isPersimmon ? '原图纸样' : '示意轮廓 · 待样片验证'}}</text>
+        <text class="proof">{{isCarrot || isApple || isFrog || isPersimmon ? '原图纸样' : '示意轮廓 · 待样片验证'}}</text>
       </view>
       <canvas id="patternCanvas" type="2d" class="pattern-canvas" aria-label="{{canvasDescription}}"></canvas>
       <view class="canvas-description" aria-live="polite">{{canvasDescription}}</view>
@@ -26,16 +26,16 @@
     <view class="readout" aria-live="polite">{{readout}}</view>
 
     <view class="controls-section" aria-label="纸样参数">
-      <view wx:if="{{kind === 'bib' || kind === 'petal' || isCarrot}}" class="field">
-        <view class="field-head"><text>{{isCarrot ? '胡萝卜长度' : paramsConfig.length.label}} (cm)</text><text class="field-value">{{length}}cm</text></view>
-        <slider min="{{isCarrot ? 15 : 4}}" max="{{isCarrot ? 20 : 30}}" step="0.5" value="{{length}}" data-key="length" show-value="false" activeColor="#9e603d" backgroundColor="#d9cfc0" bindchange="changeSlider" aria-label="{{isCarrot ? '胡萝卜长度' : '围兜长度'}}"></slider>
-        <view class="limits"><text>{{isCarrot ? '15cm' : '4cm'}}</text><text>{{isCarrot ? '20cm' : '30cm'}}</text></view>
+      <view wx:if="{{kind === 'bib' || kind === 'petal'}}" class="field">
+        <view class="field-head"><text>{{paramsConfig.length.label}} (cm)</text><text class="field-value">{{length}}cm</text></view>
+        <slider min="4" max="30" step="0.5" value="{{length}}" data-key="length" show-value="false" activeColor="#9e603d" backgroundColor="#d9cfc0" bindchange="changeSlider" aria-label="围兜长度"></slider>
+        <view class="limits"><text>4cm</text><text>30cm</text></view>
       </view>
 
-      <view wx:if="{{kind !== 'triangle' && !isApple && !isFrog && !isPersimmon}}" class="field">
-        <view class="field-head"><text>{{isCarrot ? '胡萝卜最大宽度' : '围兜宽度'}} (cm)</text><text class="field-value">{{width}}cm</text></view>
-        <slider min="{{kind === 'o' ? 3 : isCarrot ? 6 : 2}}" max="{{kind === 'o' ? 10 : 18}}" step="0.5" value="{{width}}" data-key="width" activeColor="#9e603d" backgroundColor="#d9cfc0" bindchange="changeSlider" aria-label="{{isCarrot ? '胡萝卜最大宽度' : '围兜宽度'}}"></slider>
-        <view class="limits"><text>{{kind === 'o' ? '3cm' : isCarrot ? '6cm' : '2cm'}}</text><text>{{kind === 'o' ? '10cm' : '18cm'}}</text></view>
+      <view wx:if="{{kind !== 'triangle' && !isCarrot && !isApple && !isFrog && !isPersimmon}}" class="field">
+        <view class="field-head"><text>围兜宽度 (cm)</text><text class="field-value">{{width}}cm</text></view>
+        <slider min="{{kind === 'o' ? 3 : 2}}" max="{{kind === 'o' ? 10 : 18}}" step="0.5" value="{{width}}" data-key="width" activeColor="#9e603d" backgroundColor="#d9cfc0" bindchange="changeSlider" aria-label="围兜宽度"></slider>
+        <view class="limits"><text>{{kind === 'o' ? '3cm' : '2cm'}}</text><text>{{kind === 'o' ? '10cm' : '18cm'}}</text></view>
       </view>
 
       <view wx:if="{{kind === 'petal' || kind === 'o'}}" class="field">
@@ -57,12 +57,12 @@
       </view>
     </view>
 
-    <view class="shared-section" aria-label="通用参数">
+    <view wx:if="{{!isCarrot}}" class="shared-section" aria-label="通用参数">
       <block wx:if="{{!isCarrot && !isApple && !isFrog && !isPersimmon}}">
         <view class="field-head"><text>脖围 (厘米)</text><text class="field-value">{{neck}}cm</text></view>
         <input class="neck-input" type="digit" value="{{neck}}" maxlength="4" placeholder="20-50" bindblur="changeNeck" aria-label="脖围，20到50厘米，步进0.5厘米" />
       </block>
-      <view class="seam-row">
+      <view wx:if="{{!isCarrot}}" class="seam-row">
         <view><text class="seam-title">{{isApple || isFrog || isPersimmon ? '原图纸样' : '显示缝份'}}</text><text class="seam-note">{{isApple || isFrog || isPersimmon ? '图片自带线条 · 打印前请按A4 100%比例输出' : '固定 1cm · 灰色虚线'}}</text></view>
         <switch wx:if="{{!isApple && !isFrog && !isPersimmon}}" checked="{{seam}}" color="#9e603d" bindchange="toggleSeam" aria-label="显示缝份"></switch>
       </view>
