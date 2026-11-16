@@ -7,10 +7,10 @@
 
     <image
       class="hippo-cover"
-      src="/assets/hippo-cover.jpg"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/hippo-cover.jpg"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/hippo-cover.jpg"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/hippo-cover.jpg"
       aria-label="蓝绿色布艺河马玩偶效果图"
     />
 
@@ -40,10 +40,10 @@
 
     <image
       class="hippo-reference"
-      src="/assets/hippo-reference.jpg"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/hippo-reference.jpg"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/hippo-reference.jpg"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/hippo-reference.jpg"
       aria-label="灰色布艺河马成品参考图"
     />
 

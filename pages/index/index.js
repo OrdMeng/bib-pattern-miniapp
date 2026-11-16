@@ -79,7 +79,7 @@ Page({
           this.data.isPersimmon ? "柿子纸样图片加载失败，请重新打开页面。" : "青蛙纸样图片加载失败，请重新打开页面。",
           "error"
         );
-        image.src = this.data.isPersimmon ? "/assets/persimmon-pattern.jpg" : "/assets/frog-pattern.jpg";
+        image.src = this.data.isPersimmon ? "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/persimmon-pattern.jpg" : "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/frog-pattern.jpg";
         return;
       }
       this.renderPattern();

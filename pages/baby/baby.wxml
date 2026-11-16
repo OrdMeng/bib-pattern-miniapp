@@ -17,7 +17,7 @@
 
     <button class="baby-card" data-item="sunhat" bindtap="openItem" aria-label="太阳帽制作方法">
       <view class="baby-card-art sunhat-art" aria-hidden="true">
-        <image class="baby-card-photo" src="/assets/sunhat-finished.jpg" mode="aspectFill" />
+        <image class="baby-card-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sunhat-finished.jpg" mode="aspectFill" />
       </view>
       <view class="baby-card-footer">
         <text class="baby-card-name">太阳帽</text>
@@ -27,7 +27,7 @@
 
     <button class="baby-card" data-item="vest" bindtap="openItem" aria-label="对开马甲教程">
       <view class="baby-card-art vest-art" aria-hidden="true">
-        <image class="baby-card-photo" src="/assets/vest-pattern-guide.jpg" mode="aspectFit" />
+        <image class="baby-card-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/vest-pattern-guide.jpg" mode="aspectFit" />
       </view>
       <view class="baby-card-footer">
         <text class="baby-card-name">对开马甲</text>
@@ -37,7 +37,7 @@
 
     <button class="baby-card" data-item="bee-vest" bindtap="openItem" aria-label="挖掘机蜜蜂侧开扣棉马甲教程">
       <view class="baby-card-art bee-vest-art" aria-hidden="true">
-        <image class="baby-card-photo" src="/assets/bee-vest-finished.jpg" mode="aspectFit" />
+        <image class="baby-card-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/bee-vest-finished.jpg" mode="aspectFit" />
       </view>
       <view class="baby-card-footer">
         <text class="baby-card-name">侧开扣棉马甲</text>

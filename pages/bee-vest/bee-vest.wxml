@@ -7,10 +7,10 @@
 
     <image
       class="bee-vest-cover"
-      src="/assets/bee-vest-finished.jpg"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/bee-vest-finished.jpg"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/bee-vest-finished.jpg"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/bee-vest-finished.jpg"
       aria-label="挖掘机和小蜜蜂图案侧开扣棉马甲款式图"
     />
 

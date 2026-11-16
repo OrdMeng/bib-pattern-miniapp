@@ -7,10 +7,10 @@
 
     <image
       class="owl-cover"
-      src="/assets/owl-cover.jpg"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/owl-cover.jpg"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/owl-cover.jpg"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/owl-cover.jpg"
       aria-label="两只布艺猫头鹰玩偶成品参考图"
     />
 
@@ -20,10 +20,10 @@
     </view>
     <image
       class="owl-pattern"
-      src="/assets/owl-pattern.png"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/owl-pattern.png"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/owl-pattern.png"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/owl-pattern.png"
       aria-label="猫头鹰布艺玩偶 A4 纸样预览"
     />
 

@@ -6,7 +6,7 @@
   <view class="category-grid">
     <button class="category-card" data-category="carrot" bindtap="openCategory" aria-label="胡萝卜，进入纸样生成">
       <view class="category-art carrot-art">
-        <image class="category-photo" src="/assets/carrot-result.jpg" mode="aspectFill" aria-hidden="true" />
+        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/carrot-result.jpg" mode="aspectFill" aria-hidden="true" />
       </view>
       <view class="category-footer">
         <text class="category-name">胡萝卜</text>
@@ -16,7 +16,7 @@
 
     <button class="category-card" data-category="apple" bindtap="openCategory" aria-label="苹果，进入纸样生成">
       <view class="category-art apple-art" aria-hidden="true">
-        <image class="category-photo" src="/assets/apple-result.jpg" mode="aspectFill" />
+        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/apple-result.jpg" mode="aspectFill" />
       </view>
       <view class="category-footer">
         <text class="category-name">苹果</text>
@@ -26,7 +26,7 @@
 
     <button class="category-card" data-category="frog" bindtap="openCategory" aria-label="小青蛙，进入纸样生成">
       <view class="category-art frog-art">
-        <image class="category-photo" src="/assets/frog-result.jpg" mode="aspectFill" aria-hidden="true" />
+        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/frog-result.jpg" mode="aspectFill" aria-hidden="true" />
       </view>
       <view class="category-footer">
         <text class="category-name">小青蛙</text>
@@ -36,7 +36,7 @@
 
     <button class="category-card" data-category="persimmon" bindtap="openCategory" aria-label="柿子，进入纸样生成">
       <view class="category-art persimmon-art">
-        <image class="category-photo" src="/assets/persimmon-result.jpg" mode="aspectFill" aria-hidden="true" />
+        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/persimmon-result.jpg" mode="aspectFill" aria-hidden="true" />
       </view>
       <view class="category-footer">
         <text class="category-name">柿子</text>
@@ -46,7 +46,7 @@
 
     <button class="category-card" data-category="sheep" bindtap="openCategory" aria-label="小羊玩偶制作教程">
       <view class="category-art sheep-art">
-        <image class="category-photo" src="/assets/sheep-cover.jpg" mode="aspectFill" aria-hidden="true" />
+        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sheep-cover.jpg" mode="aspectFill" aria-hidden="true" />
       </view>
       <view class="category-footer">
         <text class="category-name">小羊玩偶</text>
@@ -56,7 +56,7 @@
 
     <button class="category-card" data-category="deer" bindtap="openCategory" aria-label="小情侣小鹿制作教程">
       <view class="category-art deer-art">
-        <image class="category-photo" src="/assets/deer-cover.jpg" mode="aspectFit" aria-hidden="true" />
+        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/deer-cover.jpg" mode="aspectFit" aria-hidden="true" />
       </view>
       <view class="category-footer">
         <text class="category-name">小情侣小鹿</text>
@@ -66,7 +66,7 @@
 
     <button class="category-card" data-category="hippo" bindtap="openCategory" aria-label="河马玩偶制作教程">
       <view class="category-art hippo-art">
-        <image class="category-photo" src="/assets/hippo-cover.jpg" mode="aspectFill" aria-hidden="true" />
+        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/hippo-cover.jpg" mode="aspectFill" aria-hidden="true" />
       </view>
       <view class="category-footer">
         <text class="category-name">河马玩偶</text>
@@ -76,7 +76,7 @@
 
     <button class="category-card" data-category="owl" bindtap="openCategory" aria-label="猫头鹰玩偶纸样">
       <view class="category-art owl-art">
-        <image class="category-photo" src="/assets/owl-cover.jpg" mode="aspectFill" aria-hidden="true" />
+        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/owl-cover.jpg" mode="aspectFill" aria-hidden="true" />
       </view>
       <view class="category-footer">
         <text class="category-name">猫头鹰</text>
@@ -86,7 +86,7 @@
 
     <button class="category-card" data-category="polar-bear" bindtap="openCategory" aria-label="胖胖北极熊制作教程">
       <view class="category-art polar-bear-art">
-        <image class="category-photo" src="/assets/polar-bear-cover.jpeg" mode="aspectFit" aria-hidden="true" />
+        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/polar-bear-cover.jpeg" mode="aspectFit" aria-hidden="true" />
       </view>
       <view class="category-footer">
         <text class="category-name">胖胖北极熊</text>
@@ -96,7 +96,7 @@
 
     <button class="category-card" data-category="elephant" bindtap="openCategory" aria-label="亲子象玩偶纸样">
       <view class="category-art elephant-art">
-        <image class="category-photo" src="/assets/elephant-cover.jpg" mode="aspectFill" aria-hidden="true" />
+        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/elephant-cover.jpg" mode="aspectFill" aria-hidden="true" />
       </view>
       <view class="category-footer">
         <text class="category-name">亲子象</text>

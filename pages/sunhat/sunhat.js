@@ -4,11 +4,11 @@ Page({
   data: {
     sizes: ["39", "42", "45", "48", "50", "52", "55"],
     selectedSize: "39",
-    patternImage: "/assets/sunhat-pattern-39.png"
+    patternImage: "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sunhat-pattern-39.png"
   },
 
   previewTutorial() {
-    const image = "/assets/sunhat-tutorial.jpg";
+    const image = "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sunhat-tutorial.jpg";
     wx.previewImage({
       current: image,
       urls: [image]
@@ -19,7 +19,7 @@ Page({
     const size = String(event.currentTarget.dataset.size);
     this.setData({
       selectedSize: size,
-      patternImage: `/assets/sunhat-pattern-${size}.png`
+      patternImage: `https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sunhat-pattern-${size}.png`
     });
   },
 

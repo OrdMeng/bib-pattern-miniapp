@@ -7,10 +7,10 @@
 
     <image
       class="polar-bear-cover"
-      src="/assets/polar-bear-cover.jpeg"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/polar-bear-cover.jpeg"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/polar-bear-cover.jpeg"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/polar-bear-cover.jpeg"
       aria-label="胖胖北极熊布艺玩偶成品参考图"
     />
 

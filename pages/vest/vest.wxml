@@ -7,10 +7,10 @@
 
     <image
       class="vest-finished"
-      src="/assets/vest-pattern-guide.jpg"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/vest-pattern-guide.jpg"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/vest-pattern-guide.jpg"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/vest-pattern-guide.jpg"
       aria-label="小熊马甲与蜜蜂装饰款式封面图"
     />
 

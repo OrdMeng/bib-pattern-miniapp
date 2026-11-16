@@ -6,7 +6,7 @@
     </view>
 
     <view class="elephant-hero" aria-label="亲子象布艺玩偶封面">
-      <image class="elephant-hero-image" src="/assets/elephant-cover.jpg" mode="aspectFit" aria-hidden="true" />
+      <image class="elephant-hero-image" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/elephant-cover.jpg" mode="aspectFit" aria-hidden="true" />
     </view>
 
     <view class="elephant-facts" aria-label="纸样信息">

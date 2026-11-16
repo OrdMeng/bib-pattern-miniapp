@@ -7,10 +7,10 @@
 
     <image
       class="deer-cover"
-      src="/assets/deer-cover.jpg"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/deer-cover.jpg"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/deer-cover.jpg"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/deer-cover.jpg"
       aria-label="红蓝格子布小情侣小鹿成品参考图"
     />
 
@@ -20,10 +20,10 @@
     </view>
     <image
       class="deer-instruction-image"
-      src="/assets/deer-pattern.png"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/deer-pattern.png"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/deer-pattern.png"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/deer-pattern.png"
       aria-label="小鹿纸样图"
     />
 
@@ -38,19 +38,19 @@
     </view>
     <image
       class="deer-instruction-image"
-      src="/assets/deer-tutorial.jpg"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/deer-tutorial.jpg"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/deer-tutorial.jpg"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/deer-tutorial.jpg"
       aria-label="小鹿制作教程图"
     />
 
     <image
       class="deer-finished"
-      src="/assets/deer-finished-2.jpg"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/deer-finished-2.jpg"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/deer-finished-2.jpg"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/deer-finished-2.jpg"
       aria-label="小情侣小鹿侧面成品参考图"
     />
   </view>

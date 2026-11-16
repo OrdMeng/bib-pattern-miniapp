@@ -7,10 +7,10 @@
 
     <image
       class="sheep-cover"
-      src="/assets/sheep-cover.jpg"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sheep-cover.jpg"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/sheep-cover.jpg"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sheep-cover.jpg"
       aria-label="小羊布艺玩偶成品参考图"
     />
 
@@ -20,10 +20,10 @@
     </view>
     <image
       class="sheep-instruction-image"
-      src="/assets/sheep-pattern.jpg"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sheep-pattern.jpg"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/sheep-pattern.jpg"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sheep-pattern.jpg"
       aria-label="小羊玩偶纸样图"
     />
 
@@ -33,10 +33,10 @@
     </view>
     <image
       class="sheep-instruction-image"
-      src="/assets/sheep-tutorial.jpg"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sheep-tutorial.jpg"
       mode="widthFix"
       bindtap="previewImage"
-      data-src="/assets/sheep-tutorial.jpg"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sheep-tutorial.jpg"
       aria-label="小羊玩偶制作过程图"
     />
   </view>
