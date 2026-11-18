@@ -23,7 +23,7 @@
 .finished-photo-wrap {
   display: flex;
   justify-content: center;
-  height: 340rpx;
+  height: 480rpx;
   margin-bottom: 34rpx;
   overflow: hidden;
   background: #ede8db;

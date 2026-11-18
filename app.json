@@ -10,7 +10,9 @@
     "pages/deer/deer",
     "pages/polar-bear/polar-bear",
     "pages/bags/bags",
+    "pages/tote-bag/tote-bag",
     "pages/bag-detail/bag-detail",
+    "pages/mini-bag/mini-bag",
     "pages/bag-guide/bag-guide",
     "pages/toy/toy",
     "pages/dictionary/dictionary",
@@ -27,7 +29,8 @@
       "root": "subpackages/patterns",
       "pages": [
         "vest/vest",
-        "bee-vest/bee-vest"
+        "bee-vest/bee-vest",
+        "petal-bib/petal-bib"
       ]
     }
   ],

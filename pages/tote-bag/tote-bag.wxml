@@ -1,0 +1,67 @@
+<scroll-view class="tote-page" scroll-y>
+  <view class="tote-shell">
+    <view class="tote-heading">
+      <text class="tote-title">托特包制作方法</text>
+      <text class="tote-subtitle">按 HOBO 包纸样，从打印拼版到完成包身</text>
+    </view>
+
+    <image class="tote-cover" src="{{coverImage}}" mode="widthFix" bindtap="previewCover" aria-label="托特包参考图，点按放大查看" />
+
+    <view class="tote-facts">
+      <view wx:for="{{facts}}" wx:key="label" class="fact-row">
+        <text class="fact-label">{{item.label}}</text>
+        <text class="fact-value">{{item.value}}</text>
+      </view>
+    </view>
+
+    <view class="source-note">
+      <text class="source-title">先看资料标注</text>
+      <text class="source-copy">附件纸样标注为“流浪包”，需要把 A4 页面上的 a、b、c 三块拼合后使用。下面步骤按这份纸样的结构整理，裁剪前请先确认打印比例和缝份。</text>
+    </view>
+
+    <view class="tote-section">
+      <text class="section-title">准备材料</text>
+      <text class="section-note">先准备表布和基础工具，再决定是否加里布、铺棉或布衬。</text>
+    </view>
+    <view class="material-list">
+      <view wx:for="{{materials}}" wx:key="name" class="material-row">
+        <text class="material-name">{{item.name}}</text>
+        <text class="material-note">{{item.note}}</text>
+      </view>
+    </view>
+
+    <view class="tote-section step-section">
+      <text class="section-title">制作顺序</text>
+      <text class="section-note">每道缝完成后先压平，弧线和提手根部要重点加固。</text>
+    </view>
+    <view class="step-list">
+      <view wx:for="{{steps}}" wx:key="title" class="step-row">
+        <text class="step-number">{{index + 1}}</text>
+        <view class="step-copy">
+          <text class="step-title">{{item.title}}</text>
+          <text class="step-note">{{item.note}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="pattern-section">
+      <view class="tote-section pattern-heading">
+        <text class="section-title">纸样预览</text>
+        <text class="section-note">共 2 页，点按图片可放大查看。正式打印请使用原始 PDF。</text>
+      </view>
+      <text class="pattern-note">下载后请按 A4、实际大小 / 100% 打印，不要选择“适合页面”。打开 PDF 后可用右上角菜单保存或分享。</text>
+      <view class="pattern-grid">
+        <image wx:for="{{patternImages}}" wx:key="*this" class="pattern-image" src="{{item}}" mode="widthFix" data-index="{{index}}" bindtap="previewPattern" aria-label="纸样第{{index + 1}}页" />
+      </view>
+    </view>
+
+    <view class="finish-note">
+      <text class="finish-title">完成前检查</text>
+      <text class="finish-copy">开口两侧高度一致，提手弧线没有夹皱，底部转角已压平，所有受力点都有回针加固。</text>
+    </view>
+
+    <view class="download-section">
+      <button class="pattern-button" bindtap="openPattern">下载纸样</button>
+    </view>
+  </view>
+</scroll-view>

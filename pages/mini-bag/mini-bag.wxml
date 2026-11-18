@@ -1,0 +1,62 @@
+<scroll-view class="mini-bag-page" scroll-y>
+  <view class="mini-bag-shell">
+    <view class="mini-bag-heading">
+      <text class="mini-bag-title">手提迷你包</text>
+      <text class="mini-bag-subtitle">手提款 · 成品宽 23cm · 成品高 15.5cm</text>
+    </view>
+
+    <image
+      class="mini-bag-cover"
+      src="{{coverImage}}"
+      mode="widthFix"
+      bindtap="previewImage"
+      binderror="handleCoverError"
+      aria-label="手提迷你包成品图，点按放大查看"
+    />
+
+    <view class="mini-bag-facts" aria-label="款式信息">
+      <view class="fact"><text class="fact-label">成品宽度</text><text class="fact-value">23cm</text></view>
+      <view class="fact"><text class="fact-label">成品高度</text><text class="fact-value">15.5cm</text></view>
+      <view class="fact"><text class="fact-label">纸样页数</text><text class="fact-value">A4 · 3页</text></view>
+    </view>
+
+    <view class="section-heading">
+      <text class="section-title">先看款式</text>
+      <text class="section-note">橙色绗缝感手提迷你包，包身为圆润弧形，顶部配弧形提手；成品尺寸以文件名标注为准。</text>
+    </view>
+
+    <view class="section-heading material-heading">
+      <text class="section-title">准备材料</text>
+      <text class="section-note">裁片名称和数量按随附 PDF 的德文标注整理。</text>
+    </view>
+
+    <view class="material-list">
+      <view class="material-row"><text>提手</text><text>表布 1 片 · 里布 1 片，均对折</text></view>
+      <view class="material-row"><text>包身</text><text>表布 2 片 · 里布 2 片</text></view>
+      <view class="material-row"><text>装饰带</text><text>可选，1 片对折裁剪</text></view>
+      <view class="material-row"><text>校准标记</text><text>3×3cm 方框</text></view>
+    </view>
+
+    <view class="section-heading tutorial-heading">
+      <text class="section-title">制作顺序</text>
+      <text class="section-note">按纸样标记和以下顺序操作</text>
+    </view>
+
+    <view class="step-list">
+      <view wx:for="{{steps}}" wx:key="title" class="step-row">
+        <text class="step-number">{{index + 1}}</text>
+        <view class="step-copy"><text class="step-title">{{item.title}}</text><text class="step-note">{{item.note}}</text></view>
+      </view>
+    </view>
+
+    <view class="pattern-section">
+      <view class="section-heading pattern-heading">
+        <text class="section-title">A4 纸样</text>
+        <text class="section-note">共 3 页 · 含 3×3cm 校准框</text>
+      </view>
+      <text class="pattern-note">打印时请选择“实际大小 / 100%”，不要勾选“适合页面”；先测量校准框，再拼接和裁剪。</text>
+      <text class="pattern-note">PDF 中的外文标注对应表布、里布、对折线、经向和翻口位置，制作前请逐页核对。</text>
+      <button class="pattern-button" bindtap="openPattern">下载纸样</button>
+    </view>
+  </view>
+</scroll-view>

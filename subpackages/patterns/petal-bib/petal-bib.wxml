@@ -1,0 +1,71 @@
+<scroll-view class="petal-bib-page" scroll-y>
+  <view class="petal-bib-shell">
+    <view class="petal-bib-heading">
+      <text class="petal-bib-title">花瓣口水巾</text>
+      <text class="petal-bib-subtitle">宝宝花瓣款 · 40cm 领口 · 按扣开合</text>
+    </view>
+
+    <image
+      class="petal-bib-cover"
+      src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/petal-bib-product.jpg"
+      mode="widthFix"
+      bindtap="previewImage"
+      data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/petal-bib-product.jpg"
+      aria-label="粉色花瓣口水巾成品图"
+    />
+
+    <view class="petal-bib-facts" aria-label="款式信息">
+      <view class="fact"><text class="fact-label">纸样规格</text><text class="fact-value">A4 · 1页</text></view>
+      <view class="fact"><text class="fact-label">领口尺寸</text><text class="fact-value">40cm</text></view>
+      <view class="fact"><text class="fact-label">开合方式</text><text class="fact-value">按扣</text></view>
+    </view>
+
+    <view class="section-heading">
+      <text class="section-title">先看款式</text>
+      <text class="section-note">成品为花瓣轮廓的宝宝口水巾，领口两侧用按扣固定；PDF 纸样标注了对折线、经向和缝纫明线。</text>
+    </view>
+
+    <view class="section-heading material-heading">
+      <text class="section-title">纸样信息</text>
+      <text class="section-note">以下标记含义来自随附 PDF，裁剪前请先核对纸样符号。</text>
+    </view>
+
+    <view class="material-list">
+      <view class="material-row"><text>主体裁片</text><text>2 片</text></view>
+      <view class="material-row"><text>粗实线</text><text>纸样完成的轮廓线</text></view>
+      <view class="material-row"><text>细虚线</text><text>缝纫明线</text></view>
+      <view class="material-row"><text>点划线</text><text>对折线，布料需对折裁剪</text></view>
+      <view class="material-row"><text>经向箭头</text><text>面料纱向标记</text></view>
+      <view class="material-row"><text>按扣符号</text><text>纽扣安装位置</text></view>
+    </view>
+
+    <view class="section-heading tutorial-heading">
+      <text class="section-title">制作顺序</text>
+      <text class="section-note">按纸样标记和以下顺序操作</text>
+    </view>
+
+    <view class="step-list">
+      <view wx:for="{{steps}}" wx:key="title" class="step-row">
+        <text class="step-number">{{index + 1}}</text>
+        <view class="step-copy"><text class="step-title">{{item.title}}</text><text class="step-note">{{item.note}}</text></view>
+      </view>
+    </view>
+
+    <view class="pattern-section">
+      <view class="section-heading pattern-heading">
+        <text class="section-title">A4 纸样</text>
+        <text class="section-note">领口 40cm · 主体裁片 2 片</text>
+      </view>
+      <text class="pattern-note">打印时请选择“实际大小 / 100%”，不要勾选“适合页面”；裁剪前先核对按扣位置和对折线。</text>
+      <text class="pattern-note">点击下载后会打开 PDF，可用右上角菜单保存或分享纸样。</text>
+      <image
+        class="pattern-preview"
+        src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/petal-bib-pattern.png"
+        mode="widthFix"
+        bindtap="previewPattern"
+        aria-label="花瓣口水巾 A4 纸样预览"
+      />
+      <button class="pattern-button" bindtap="downloadPattern">下载纸样</button>
+    </view>
+  </view>
+</scroll-view>

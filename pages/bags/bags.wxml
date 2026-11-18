@@ -18,13 +18,16 @@
     </button>
 
     <view class="bag-grid">
-      <button wx:for="{{bagImages}}" wx:key="*this" class="bag-item" data-index="{{index}}" bindtap="openBag" aria-label="打开包包 {{index + 1}} 详情">
-        <view class="bag-art">
-          <image class="bag-image" src="{{item}}" mode="aspectFit" lazy-load="true" />
+      <button wx:for="{{bagItems}}" wx:key="id" class="bag-item" data-kind="{{item.kind}}" data-index="{{index}}" bindtap="openBag" aria-label="打开{{item.title}}">
+        <view wx:if="{{item.kind == 'guide'}}" class="bag-art bag-guide-art">
+          <image class="bag-image" src="{{item.cover}}" mode="aspectFill" lazy-load="true" />
+        </view>
+        <view wx:else class="bag-art">
+          <image class="bag-image" src="{{item.image}}" mode="aspectFit" lazy-load="true" data-index="{{index}}" binderror="handleImageError" />
           <text class="bag-index">{{index + 1}}</text>
         </view>
         <view class="bag-footer">
-          <text class="bag-name">包包 {{index + 1}}</text>
+          <text class="bag-name">{{item.title}}</text>
           <text class="bag-arrow" aria-hidden="true">›</text>
         </view>
       </button>

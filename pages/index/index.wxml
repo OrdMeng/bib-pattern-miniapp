@@ -3,8 +3,8 @@
     <view class="header">
       <view aria-hidden="true"></view>
       <view class="title-group">
-        <text class="title">{{isPersimmon ? '柿子纸样' : isFrog ? '小青蛙纸样' : isApple ? '苹果纸样' : isCarrot ? '胡萝卜纸样' : '口水巾 · 纸样生成'}}</text>
-        <text class="subtitle">{{isPersimmon ? '果实 4片 · 叶子 8片 · 果蒂 1片' : isFrog ? '头 · 身体 · 眼皮 · 眼球 · 胳膊 · 背带裤' : isApple ? '苹果片 6片 · 叶子 2片' : isCarrot ? '主体 1片 · 叶片 6片' : '参数调整后即时更新'}}</text>
+        <text class="title">{{isPersimmon ? '柿子纸样' : isFrog ? '小青蛙纸样' : isApple ? '苹果纸样' : isCarrot ? '胡萝卜纸样' : kind === 'petal' ? '花瓣口水巾 · 纸样' : '口水巾 · 纸样生成'}}</text>
+        <text class="subtitle">{{isPersimmon ? '果实 4片 · 叶子 8片 · 果蒂 1片' : isFrog ? '头 · 身体 · 眼皮 · 眼球 · 胳膊 · 背带裤' : isApple ? '苹果片 6片 · 叶子 2片' : isCarrot ? '主体 1片 · 叶片 6片' : kind === 'petal' ? '成品参考 · 参数调整后即时更新' : '参数调整后即时更新'}}</text>
       </view>
       <button class="icon-button more" aria-label="更多" bindtap="handleMore">···</button>
     </view>

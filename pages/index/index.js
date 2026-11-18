@@ -31,7 +31,18 @@ Page({
   },
 
   onLoad(options) {
-    if (options && options.kind === "carrot") {
+    if (options && options.kind === "petal") {
+      this.setData({
+        kind: "petal",
+        kindLabel: "花瓣口水巾",
+        length: geometry.DEFAULTS.length,
+        width: geometry.DEFAULTS.width,
+        count: geometry.DEFAULTS.count,
+        size: geometry.DEFAULTS.size,
+        overlap: geometry.DEFAULTS.overlap
+      });
+      wx.setNavigationBarTitle({ title: "花瓣口水巾" });
+    } else if (options && options.kind === "carrot") {
       this.setData({
         kind: "carrot",
         kindLabel: "胡萝卜纸样",

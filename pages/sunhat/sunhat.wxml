@@ -6,7 +6,7 @@
     </view>
 
     <view class="finished-photo-wrap">
-      <image class="finished-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sunhat-finished.jpg" mode="aspectFit" aria-label="蓝色碎花六片式宝宝太阳帽成品" />
+      <image class="finished-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sunhat-product.jpg" mode="aspectFit" aria-label="番茄图案六片式宝宝太阳帽成品" />
     </view>
 
     <view class="section-heading">

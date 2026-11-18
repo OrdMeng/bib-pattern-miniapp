@@ -32,9 +32,8 @@
 
 .baby-card::after { border: 0; }
 .baby-card-art { position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 1; overflow: hidden; border-radius: 10rpx; }
-.bib-art { background: #f3e4d5; }
-.bib-shape { position: relative; width: 58%; height: 58%; border: 4rpx solid #b96f50; border-radius: 28% 28% 44% 44%; background: #fff8ed; transform: perspective(200rpx) rotateX(-4deg); }
-.bib-neck { position: absolute; top: -4rpx; left: 50%; width: 38%; height: 30%; border: 4rpx solid #b96f50; border-top: 0; border-radius: 0 0 50% 50%; background: #f3e4d5; transform: translateX(-50%); }
+.petal-bib-art { background: #f3e4d5; }
+.petal-bib-photo { object-position: 58% center; }
 .sunhat-art { background: #e8e6d8; }
 .vest-art { background: #f2e6d9; }
 .bee-vest-art { background: #f4eee1; }

@@ -1,8 +1,8 @@
 Page({
   openItem(event) {
     const item = event.currentTarget.dataset.item;
-    if (item === "bib") {
-      wx.navigateTo({ url: "/pages/index/index" });
+    if (item === "petal-bib") {
+      wx.navigateTo({ url: "/subpackages/patterns/petal-bib/petal-bib" });
     } else if (item === "sunhat") {
       wx.navigateTo({ url: "/pages/sunhat/sunhat" });
     } else if (item === "vest") {
