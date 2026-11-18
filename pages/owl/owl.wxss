@@ -8,8 +8,8 @@
 .section-title { font-size: 29rpx; font-weight: 600; }
 .section-note { color: #827567; font-size: 22rpx; line-height: 1.5; }
 .owl-pattern { display: block; width: 100%; margin-bottom: 20rpx; background: #fffefa; }
-.owl-button { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 82rpx; margin: 0; padding: 0; border: 0; border-radius: 10rpx; background: #246346; color: #fffefa; font-size: 27rpx; line-height: normal; }
-.owl-button::after { border: 0; }
+.pattern-button { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 82rpx; margin: 0; padding: 0; border: 0; border-radius: 10rpx; background: #246346; color: #fffefa; font-size: 27rpx; line-height: normal; }
+.pattern-button::after { border: 0; }
 
 @media (max-width: 360px) {
   .owl-shell { padding-right: 24rpx; padding-left: 24rpx; }

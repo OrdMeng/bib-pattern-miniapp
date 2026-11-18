@@ -15,6 +15,8 @@
 .pattern-label { display: block; margin: 0 4rpx 10rpx; color: #9e603d; font-size: 25rpx; font-weight: 600; }
 .pattern-image { display: block; width: 100%; background: #fffefa; }
 .process-heading { margin-top: 4rpx; }
+.pattern-button { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 82rpx; margin: 0; padding: 0; border: 0; border-radius: 10rpx; background: #246346; color: #fffefa; font-size: 27rpx; line-height: normal; }
+.pattern-button::after { border: 0; }
 @media (max-width: 360px) {
   .polar-bear-shell { padding-right: 24rpx; padding-left: 24rpx; }
 }

@@ -2,10 +2,10 @@ const hoboPatternPdf = require("../../utils/hobo-pattern-pdf");
 
 Page({
   data: {
-    coverImage: "../../assets/tote-reference.png",
+    coverImage: "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/tote-reference.png",
     patternImages: [
-      "../../assets/hobo-pattern-1.png",
-      "../../assets/hobo-pattern-2.png"
+      "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/hobo-pattern-1.png",
+      "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/hobo-pattern-2.png"
     ],
     facts: [
       { label: "纸样", value: "A01-a / A01-b / A01-c" },

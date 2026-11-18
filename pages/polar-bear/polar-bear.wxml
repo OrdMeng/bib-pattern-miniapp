@@ -42,5 +42,7 @@
       <text class="section-title">制作提示</text>
       <text class="section-note">先完成头部和身体，再填充并组合；鼻子、眼睛和围巾可按成品风格搭配。</text>
     </view>
+
+    <button class="pattern-button" bindtap="downloadPattern">下载纸样</button>
   </view>
 </scroll-view>

@@ -99,9 +99,9 @@ Page({
           "error"
         );
         image.src = this.data.isCarrot
-          ? "../../assets/carrot-pattern.png"
+          ? "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/carrot-pattern.png"
           : this.data.isApple
-          ? "../../assets/apple-result.jpg"
+          ? "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/apple-result.jpg"
           : this.data.isPersimmon
           ? "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/persimmon-pattern.jpg"
           : "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/frog-pattern.jpg";
@@ -231,15 +231,11 @@ Page({
     });
   },
 
-  handleSave() {
-    this.exportPattern("save");
+  downloadPattern() {
+    this.exportPattern();
   },
 
-  handlePrint() {
-    this.exportPattern("print");
-  },
-
-  exportPattern(action) {
+  exportPattern() {
     if (this.data.isExporting) return;
     const state = this.getState();
     const details = geometry.calculatePattern(state);
@@ -259,20 +255,7 @@ Page({
       destWidth: Math.round(this.canvasWidth * this.pixelRatio),
       destHeight: Math.round(this.canvasHeight * this.pixelRatio),
       success: (result) => {
-        if (action === "print") {
-          this.setData({ isExporting: false });
-          wx.showModal({
-            title: "打印图片已生成",
-            content: "请保存高清图片后，以100%实际大小打印，并用5cm校准框检查比例。",
-            confirmText: "保存图片",
-            success: (modalResult) => {
-              if (modalResult.confirm) this.saveToAlbum(result.tempFilePath);
-              else this.clearExportFeedback();
-            }
-          });
-        } else {
-          this.saveToAlbum(result.tempFilePath);
-        }
+        this.saveToAlbum(result.tempFilePath);
       },
       fail: (error) => {
         this.setData({ isExporting: false });
@@ -308,9 +291,4 @@ Page({
     });
   },
 
-  clearExportFeedback() {
-    if (this.data.feedback === "正在生成图片，请稍候..." || this.data.feedback === "正在保存到相册，请稍候...") {
-      this.setFeedback("", "");
-    }
-  }
 });

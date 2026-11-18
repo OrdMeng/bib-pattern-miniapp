@@ -71,8 +71,7 @@
     <view wx:if="{{feedback}}" class="feedback {{feedbackType === 'error' ? 'error' : ''}}" role="alert">{{feedback}}</view>
 
     <view class="actions">
-      <button class="action-button print" bindtap="handlePrint" disabled="{{!patternValid || isExporting}}">{{isExporting ? '生成中...' : '纸样打印'}}</button>
-      <button class="action-button save" bindtap="handleSave" disabled="{{!patternValid || isExporting}}">{{isExporting ? '保存中...' : '保存图片'}}</button>
+      <button class="action-button download" bindtap="downloadPattern" disabled="{{!patternValid || isExporting}}">{{isExporting ? '生成中...' : '下载纸样'}}</button>
     </view>
   </view>
 </scroll-view>

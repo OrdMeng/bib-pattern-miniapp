@@ -29,7 +29,6 @@
 
     <view class="deer-pattern-info">
       <text class="pattern-note">裁剪时按纸样标注的数量准备布片，身体裁片需要左右对称；开口处用于翻面和填充。</text>
-      <button class="pattern-button" bindtap="openPattern">打开小鹿纸样 PDF</button>
     </view>
 
     <view class="deer-section process-heading">
@@ -53,5 +52,7 @@
       data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/deer-finished-2.jpg"
       aria-label="小情侣小鹿侧面成品参考图"
     />
+
+    <button class="pattern-button" bindtap="openPattern">下载纸样</button>
   </view>
 </scroll-view>

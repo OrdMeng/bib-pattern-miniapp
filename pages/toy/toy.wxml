@@ -16,7 +16,7 @@
 
     <button class="category-card" data-category="apple" bindtap="openCategory" aria-label="苹果，进入纸样生成">
       <view class="category-art apple-art" aria-hidden="true">
-        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/apple-result.jpg" mode="aspectFill" />
+        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/apple-result.png" mode="aspectFill" />
       </view>
       <view class="category-footer">
         <text class="category-name">苹果</text>

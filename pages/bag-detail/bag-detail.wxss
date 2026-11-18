@@ -10,6 +10,8 @@
 .detail-reminder { display: flex; flex-direction: column; gap: 8rpx; margin-top: 34rpx; padding: 20rpx; background: #fffefa; }
 .reminder-title { color: #9e603d; font-size: 27rpx; font-weight: 600; }
 .reminder-note { color: #827567; font-size: 23rpx; line-height: 1.55; }
+.pattern-button { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 82rpx; margin: 24rpx 0 0; padding: 0; border: 0; border-radius: 10rpx; background: #246346; color: #fffefa; font-size: 27rpx; line-height: normal; }
+.pattern-button::after { border: 0; }
 @media (max-width: 360px) {
   .bag-detail-shell { padding-right: 24rpx; padding-left: 24rpx; }
 }

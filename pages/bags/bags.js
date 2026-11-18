@@ -5,7 +5,7 @@ const bagItems = [
     id: "tote",
     kind: "guide",
     title: "托特包",
-    cover: "../../assets/tote-reference.png"
+    cover: "https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/tote-reference.png"
   },
   {
     id: "mini",

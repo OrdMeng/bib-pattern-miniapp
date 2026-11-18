@@ -27,6 +27,6 @@
       aria-label="猫头鹰布艺玩偶 A4 纸样预览"
     />
 
-    <button class="owl-button" bindtap="openPattern">打开猫头鹰纸样 PDF</button>
+    <button class="pattern-button" bindtap="openPattern">下载纸样</button>
   </view>
 </scroll-view>

@@ -56,7 +56,7 @@
       </view>
       <text class="pattern-note">纸样包含前片、后片、领口与装饰裁片，具体裁片名称和拼接顺序以 PDF 页面标注为准。</text>
       <text class="pattern-note">打印时请选择“实际大小 / 100%”，不要勾选“适合页面”；拼接前先核对校准标记。</text>
-      <button class="pattern-button" bindtap="openPattern">打开侧开扣马甲纸样 PDF</button>
+      <button class="pattern-button" bindtap="openPattern">下载纸样</button>
     </view>
   </view>
 </scroll-view>

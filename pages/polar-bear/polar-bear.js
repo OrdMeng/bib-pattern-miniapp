@@ -1,3 +1,5 @@
+const savePatternImages = require("../../utils/pattern-image-download");
+
 Page({
   data: {
     patterns: [
@@ -12,5 +14,9 @@ Page({
     const image = event.currentTarget.dataset.src;
     const urls = ["https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/polar-bear-cover.jpeg"].concat(this.data.patterns.map((item) => item.src));
     wx.previewImage({ current: image, urls });
+  },
+
+  downloadPattern() {
+    savePatternImages(this.data.patterns.map((item) => item.src));
   }
 });

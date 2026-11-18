@@ -26,6 +26,6 @@
       <text class="pattern-note">拼接或裁剪前先核对纸样中的定位字母和裁片数量。</text>
     </view>
 
-    <button class="pattern-button" bindtap="openPattern">打开亲子象纸样 PDF</button>
+    <button class="pattern-button" bindtap="openPattern">下载纸样</button>
   </view>
 </scroll-view>

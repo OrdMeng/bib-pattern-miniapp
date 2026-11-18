@@ -39,5 +39,7 @@
       data-src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sheep-tutorial.jpg"
       aria-label="小羊玩偶制作过程图"
     />
+
+    <button class="pattern-button" bindtap="downloadPattern">下载纸样</button>
   </view>
 </scroll-view>

@@ -53,7 +53,7 @@
         <text class="section-note">共 9 页 · A4 横向</text>
       </view>
       <text class="pattern-note">PDF 内含材料清单、裁片布局、纸样和英文制作说明。</text>
-      <button class="pattern-button" bindtap="openPattern">打开河马玩偶纸样 PDF</button>
+      <button class="pattern-button" bindtap="openPattern">下载纸样</button>
     </view>
   </view>
 </scroll-view>
