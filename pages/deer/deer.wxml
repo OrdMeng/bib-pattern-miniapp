@@ -53,6 +53,6 @@
       aria-label="小情侣小鹿侧面成品参考图"
     />
 
-    <button class="pattern-button" bindtap="openPattern">下载纸样</button>
+    <button class="pattern-button" bindtap="downloadPattern">下载纸样</button>
   </view>
 </scroll-view>

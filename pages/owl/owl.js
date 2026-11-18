@@ -1,4 +1,4 @@
-const owlPatternPdf = require("../../utils/owl-pattern-pdf");
+const savePatternImages = require("../../utils/pattern-image-download");
 
 Page({
   previewImage(event) {
@@ -6,24 +6,7 @@ Page({
     wx.previewImage({ current: image, urls: [image] });
   },
 
-  openPattern() {
-    const filePath = `${wx.env.USER_DATA_PATH}/owl-pattern.pdf`;
-    wx.showLoading({ title: "准备纸样" });
-
-    wx.getFileSystemManager().writeFile({
-      filePath,
-      data: owlPatternPdf,
-      encoding: "base64",
-      success: () => {
-        wx.openDocument({
-          filePath,
-          fileType: "pdf",
-          showMenu: true,
-          fail: () => wx.showToast({ title: "纸样打开失败", icon: "none" })
-        });
-      },
-      fail: () => wx.showToast({ title: "纸样准备失败", icon: "none" }),
-      complete: () => wx.hideLoading()
-    });
+  downloadPattern() {
+    savePatternImages(["https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/owl-pattern.png"]);
   }
 });
