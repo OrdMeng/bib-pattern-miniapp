@@ -44,16 +44,6 @@
       </view>
     </button>
 
-    <button class="category-card" data-category="sheep" bindtap="openCategory" aria-label="小羊玩偶制作教程">
-      <view class="category-art sheep-art">
-        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/sheep-cover.jpg" mode="aspectFill" aria-hidden="true" />
-      </view>
-      <view class="category-footer">
-        <text class="category-name">小羊玩偶</text>
-        <text class="category-arrow" aria-hidden="true">›</text>
-      </view>
-    </button>
-
     <button class="category-card" data-category="deer" bindtap="openCategory" aria-label="小情侣小鹿制作教程">
       <view class="category-art deer-art">
         <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/deer-cover.jpg" mode="aspectFit" aria-hidden="true" />
@@ -94,14 +84,5 @@
       </view>
     </button>
 
-    <button class="category-card" data-category="elephant" bindtap="openCategory" aria-label="亲子象玩偶纸样">
-      <view class="category-art elephant-art">
-        <image class="category-photo" src="https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/elephant-cover.jpg" mode="aspectFill" aria-hidden="true" />
-      </view>
-      <view class="category-footer">
-        <text class="category-name">亲子象</text>
-        <text class="category-arrow" aria-hidden="true">›</text>
-      </view>
-    </button>
   </view>
 </view>

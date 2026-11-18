@@ -7,6 +7,6 @@ Page({
   },
 
   downloadPattern() {
-    savePatternImages(["https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/owl-pattern.png"]);
+    savePatternImages(["https://sewing-1303601055.cos.ap-beijing.myqcloud.com/assets/owl-pattern.jpg"]);
   }
 });
